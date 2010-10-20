@@ -66,4 +66,4 @@
 
 [fn:sfcf] Methods are not first-class, but can always be treated as such since the language automatically creates function objects.
 [fn:jlif] Only for statics.
-[fn:jc] Anonymouse classes can only access final external bindings.
+[fn:jc] Anonymous classes can only access final external bindings.
