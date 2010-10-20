@@ -1,58 +1,67 @@
-|                                                                | Erlang | Clojure | Haskell | Scala         | Java 6       | CPython 3 | F#/OCaml |
-|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+-----------+----------|
-| TYPE DISCIPLINE                                                |        |         |         |               |              |           |          |
-|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+-----------+----------|
-| strongly typed                                                 | yes    | yes     | yes     | yes           | yes          | yes       |          |
-| statically typed                                               | no     | no      | yes     | yes           | yes          | no        |          |
-| type parameters                                                |        |         | yes     | yes           | yes          |           |          |
-| abstract types                                                 |        |         |         | yes           | no           |           |          |
-|                                                                |        |         |         |               |              |           |          |
-| OBJECTS                                                        |        |         |         |               |              |           |          |
-|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+-----------+----------|
-| objects (function/data containers that are first-class values) |        |         |         | yes           | yes          | yes       |          |
-| all values are objects                                         |        |         |         | yes           | no           |           |          |
-| inheritance                                                    |        |         |         | yes           | yes          | yes       |          |
-|                                                                |        |         |         |               |              |           |          |
-| FUNCTIONS                                                      |        |         |         |               |              |           |          |
-|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+-----------+----------|
-| first-class functions                                          | yes    | yes     | yes     | yes [fn:sfcf] | no           | yes       |          |
-| anonymous functions                                            | yes    | yes     | yes     | yes           | no           | yes       |          |
-| closures                                                       |        |         |         | yes           | no [fn:jc]   |           |          |
-| unstructured side-effects                                      | yes    | yes     | no      | yes           | yes          | yes       |          |
-| currying                                                       |        |         | yes     | yes           | no           |           |          |
-| partial application of functions                               |        |         | yes     | yes           | no           |           |          |
-| common implementations have tail recursion optimization        | yes    | no      |         | no            |              | no        |          |
-|                                                                |        |         |         |               |              |           |          |
-| LIBRARY                                                        |        |         |         |               |              |           |          |
-|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+-----------+----------|
-| implicit functions                                             |        |         |         | yes           | no           |           |          |
-| implicit parameters                                            |        |         |         | yes           | no           |           |          |
-| first-class modules                                            |        |         |         |               |              | yes       |          |
-|                                                                |        |         |         |               |              |           |          |
-| EVALUATION                                                     |        |         |         |               |              |           |          |
-|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+-----------+----------|
-| lazy evaluation of functions                                   |        | yes     | yes     |               | no           |           |          |
-| lazy initialization of fields                                  |        |         |         | yes           | no [fn:jlif] |           |          |
-| short-circuiting possible in user code                         |        |         |         | yes           | no           |           |          |
-| uniform access principle                                       |        |         |         | yes           | no           | no        |          |
-| default parameters                                             |        |         |         | yes           | no           | yes       |          |
-|                                                                |        |         |         |               |              |           |          |
-| LANGUAGE                                                       |        |         |         |               |              |           |          |
-|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+-----------+----------|
-| preprocessor                                                   |        | yes     |         | no            | no           |           |          |
-| single assignment                                              | yes    | no      | yes     | no            | no           | no        |          |
-| lexical scope                                                  |        |         |         | yes           | yes          |           |          |
-| pattern matching                                               | yes    | yes     | yes     | yes           | no           | no        |          |
-| pattern matching in function parameters                        | yes    |         | yes     | no            | no           | no        |          |
-|                                                                |        |         |         |               |              |           |          |
-| CONCURRENCY                                                    |        |         |         |               |              |           |          |
-|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+-----------+----------|
-| unmanaged mutable state                                        |        | no?     |         | yes           | yes          | yes       |          |
-| true parallelism                                               | yes    | yes     | yes     | yes           | yes          | no        |          |
-| actors                                                         |        |         |         | yes           | no           |           |          |
-| transactional memory                                           |        | yes     |         |               |              |           |          |
-|                                                                |        |         |         |               |              |           |          |
-
+|                                                                | Erlang | Clojure | Haskell | Scala         | Java6        | CPython3 | F#/OCaml |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| TYPE DISCIPLINE                                                |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| strongly typed                                                 | yes    | yes     | yes     | yes           | yes          | yes      |          |
+| statically typed                                               | no     | no      | yes     | yes           | yes          | no       |          |
+| type parameters                                                |        |         | yes     | yes           | yes          |          |          |
+| abstract types                                                 |        |         |         | yes           | no           |          |          |
+|                                                                |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| OBJECTS                                                        |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| objects (function/data containers that are first-class values) |        |         |         | yes           | yes          | yes      |          |
+| all values are objects                                         |        |         |         | yes           | no           |          |          |
+| inheritance                                                    |        |         |         | yes           | yes          | yes      |          |
+|                                                                |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| FUNCTIONS                                                      |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| first-class functions                                          | yes    | yes     | yes     | yes [fn:sfcf] | no           | yes      |          |
+| anonymous functions                                            | yes    | yes     | yes     | yes           | no           | yes      |          |
+| unstructured side-effects                                      | yes    | yes     | no      | yes           | yes          | yes      |          |
+| currying                                                       |        |         | yes     | yes           | no           |          |          |
+| partial application of functions                               |        |         | yes     | yes           | no           |          |          |
+| tail call optimization                                         | yes    | no      |         | no            |              | no       |          |
+|                                                                |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| BINDINGS & SCOPE                                               |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| lexical scope                                                  |        |         |         | yes           | yes          |          |          |
+| single assignment                                              | yes    | no      | yes     | both          | no           | no       |          |
+| closures                                                       |        |         |         | yes           | no [fn:jc]   |          |          |
+|                                                                |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| LIBRARY                                                        |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| implicit functions                                             |        |         |         | yes           | no           |          |          |
+| implicit parameters                                            |        |         |         | yes           | no           |          |          |
+| first-class modules                                            |        |         |         |               |              | yes      |          |
+|                                                                |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| EVALUATION                                                     |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| lazy evaluation of functions                                   |        | yes     | yes     |               | no           |          |          |
+| lazy initialization of fields                                  |        |         |         | yes           | no [fn:jlif] |          |          |
+| short-circuiting possible in user code                         |        |         |         | yes           | no           |          |          |
+| uniform access principle                                       |        |         |         | yes           | no           | no       |          |
+| default parameters                                             |        |         |         | yes           | no           | yes      |          |
+|                                                                |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| LANGUAGE                                                       |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| preprocessor                                                   |        | yes     |         | no            | no           |          |          |
+| pattern matching                                               | yes    | yes     | yes     | yes           | no           | no       |          |
+| pattern matching in function parameters                        | yes    |         | yes     | no            | no           | no       |          |
+|                                                                |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| CONCURRENCY                                                    |        |         |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
+| unmanaged mutable state                                        |        | no?     |         | yes           | yes          | yes      |          |
+| true parallelism                                               | yes    | yes     | yes     | yes           | yes          | no       |          |
+| actors                                                         |        |         |         | yes           | no           |          |          |
+| transactional memory                                           |        | yes     |         |               |              |          |          |
+|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
 
 
 [fn:sfcf] Methods are not first-class, but can always be treated as such since the language automatically creates function objects.
