@@ -61,7 +61,6 @@
 | true parallelism                                               | yes    | yes     | yes     | yes           | yes          | no       |          |
 | actors                                                         |        |         |         | yes           | no           |          |          |
 | transactional memory                                           |        | yes     |         |               |              |          |          |
-|----------------------------------------------------------------+--------+---------+---------+---------------+--------------+----------+----------|
 
 
 [fn:sfcf] Methods are not first-class, but can always be treated as such since the language automatically creates function objects.
