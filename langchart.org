@@ -6,6 +6,7 @@
 | statically typed                                               | no     | no      | yes     | yes   | yes   | no       |          |
 | type parameters                                                |        |         | yes     | yes   | yes   |          |          |
 | abstract types                                                 |        |         |         | yes   | no    |          |          |
+| type inference                                                 | n/a    | n/a     | yes     | yes   | no    | n/a      | yes      |
 |                                                                |        |         |         |       |       |          |          |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | OBJECTS                                                        |        |         |         |       |       |          |          |
