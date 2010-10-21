@@ -1,17 +1,19 @@
-| TYPE DISCIPLINE  | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|------------------+--------+---------+---------+-------+-------+----------+----------|
-| strongly typed   | yes    | yes     | yes     | yes   | yes   | yes      |          |
-| statically typed | no     | no      | yes     | yes   | yes   | no       |          |
-| type parameters  |        |         | yes     | yes   | yes   |          |          |
-| abstract types   |        |         |         | yes   | no    |          |          |
-| type inference   | n/a    | n/a     | yes     | yes   | no    | n/a      | yes      |
-
+| TYPE DISCIPLINE   | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
+|-------------------+--------+---------+---------+-------+-------+----------+----------|
+| strongly typed    | yes    | yes     | yes     | yes   | yes   | yes      |          |
+| statically typed  | no     | no      | yes     | yes   | yes   | no       |          |
+| type inference    | n/a    | n/a     | yes     | yes   | no    | n/a      | yes      |
+| type parameters   |        |         | yes     | yes   | yes   |          |          |
+| abstract types    |        |         |         | yes   | no    |          |          |
+| structural types  |        |         |         |       |       |          |          |
+| existential types |        |         |         |       |       |          |          |
 
 | OBJECTS                                                        | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | objects (function/data containers that are first-class values) |        |         |         | yes   | yes   | yes      |          |
 | all values are objects                                         |        |         |         | yes   | no    |          |          |
-| interfaces (contracts)                                         |        |         |         | yes   | yes   |          |          |
+| interfaces (contracts) with abstract functions                 |        |         |         | yes   | yes   |          |          |
+| interfaces (contracts) with abstract data                      |        |         |         | yes   | no    |          |          |
 | interface inheritance                                          |        |         |         | yes   | yes   | yes      |          |
 | concrete inheritance                                           |        |         |         | yes   | yes   |          |          |
 | multiple interface inheritance                                 |        |         |         | yes   | yes   |          |          |
