@@ -11,8 +11,11 @@
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | objects (function/data containers that are first-class values) |        |         |         | yes   | yes   | yes      |          |
 | all values are objects                                         |        |         |         | yes   | no    |          |          |
-| inheritance                                                    |        |         |         | yes   | yes   | yes      |          |
-
+| interfaces (contracts)                                         |        |         |         | yes   | yes   |          |          |
+| interface inheritance                                          |        |         |         | yes   | yes   | yes      |          |
+| concrete inheritance                                           |        |         |         | yes   | yes   |          |          |
+| multiple interface inheritance                                 |        |         |         | yes   | yes   |          |          |
+| multiple concrete inheritance                                  |        |         |         | yes   | no    |          |          |
 
 | FUNCTIONS                        | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------+--------+---------+---------+-------+-------+----------+----------|
