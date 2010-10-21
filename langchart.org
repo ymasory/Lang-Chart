@@ -1,6 +1,4 @@
-|                                                                | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| TYPE DISCIPLINE                                                |        |         |         |       |       |          |          |
+| TYPE DISCIPLINE                                                | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | strongly typed                                                 | yes    | yes     | yes     | yes   | yes   | yes      |          |
 | statically typed                                               | no     | no      | yes     | yes   | yes   | no       |          |
@@ -9,18 +7,14 @@
 | type inference                                                 | n/a    | n/a     | yes     | yes   | no    | n/a      | yes      |
 
 
-|                                                                | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| OBJECTS                                                        |        |         |         |       |       |          |          |
+| OBJECTS                                                        | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | objects (function/data containers that are first-class values) |        |         |         | yes   | yes   | yes      |          |
 | all values are objects                                         |        |         |         | yes   | no    |          |          |
 | inheritance                                                    |        |         |         | yes   | yes   | yes      |          |
 
 
-|                                                                | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| FUNCTIONS                                                      |        |         |         |       |       |          |          |
+| FUNCTIONS                                                      | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | first-class functions                                          | yes    | yes     | yes     | yes   | no    | yes      |          |
 | anonymous functions                                            | yes    | yes     | yes     | yes   | no    | yes      |          |
@@ -30,27 +24,21 @@
 | tail call optimization                                         | yes    | no      |         | no    |       | no       |          |
 
 
-|                                                                | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| BINDINGS & SCOPE                                               |        |         |         |       |       |          |          |
+| BINDINGS & SCOPE                                               | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | lexical scope                                                  |        |         |         | yes   | yes   |          |          |
 | single assignment                                              | yes    | no      | yes     | both  | both  | no       |          |
 | closures                                                       |        |         |         | yes   | no    |          |          |
 
 
-|                                                                | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| LIBRARY                                                        |        |         |         |       |       |          |          |
+| LIBRARY                                                        | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | implicit functions                                             |        |         |         | yes   | no    |          |          |
 | implicit parameters                                            |        |         |         | yes   | no    |          |          |
 | first-class modules                                            |        |         |         |       |       | yes      |          |
 
 
-|                                                                | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| EVALUATION                                                     |        |         |         |       |       |          |          |
+| EVALUATIO                                                      | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | lazy evaluation of functions                                   |        | yes     | yes     |       | no    |          |          |
 | lazy initialization of fields                                  |        |         |         | yes   | no    |          |          |
@@ -59,18 +47,14 @@
 | default parameters                                             |        |         |         | yes   | no    | yes      |          |
 
 
-|                                                                | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| LANGUAGE                                                       |        |         |         |       |       |          |          |
+| LANGUAGE                                                       | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | preprocessor                                                   |        | yes     |         | no    | no    |          |          |
 | pattern matching                                               | yes    | yes     | yes     | yes   | no    | no       |          |
 | pattern matching in function parameters                        | yes    |         | yes     | no    | no    | no       |          |
 
 
-|                                                                | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| CONCURRENCY                                                    |        |         |         |       |       |          |          |
+| CONCURRENCY                                                    | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
 | true parallelism                                               | yes    | yes     | yes     | yes   | yes   | no       | yes      |
 | unmanaged mutable state                                        |        | no?     |         | yes   | yes   | yes      |          |
