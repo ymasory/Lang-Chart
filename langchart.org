@@ -20,6 +20,9 @@
 | higher kinded types      |          |         | no   | yes   |
 | structural types         |          |         | no   | yes   |
 | views                    |          |         |      | yes   |
+| sum types                |          |         |      |       |
+| product types            |          |         |      |       |
+| recursive types          |          |         |      |       |
 
 Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 
