@@ -58,7 +58,7 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 
 | BINDINGS & SCOPE  | Erlang | Clojure | Haskell | Scala | Java | CPython | F#/OCaml |
 |-------------------+--------+---------+---------+-------+------+---------+----------|
-| lexical scope     |        |         |         | yes   | yes  |         |          |
+| lexical scope     |        |         |         | yes   | yes  | no      |          |
 | single assignment | yes    | no      | yes     | both  | both | no      |          |
 | closures          |        |         |         | yes   | no   |         |          |
 
