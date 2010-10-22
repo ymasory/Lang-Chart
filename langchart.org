@@ -41,6 +41,8 @@ Notes: Python's duck typing is similar in spirit to structural types.
 | named arguments                   |        |         |         | yes   | no    | yes      |          |
 | variable number arguments         |        |         |         | yes   | yes   |          |          |
 | unstructured side-effects         | yes    | yes     | no      | yes   | yes   | yes      |          |
+| generators                        |        |         |         |       |       |          |          |
+| continuations                     |        |         |         |       |       |          |          |
 
 Notes: Scala's methods aren't themselves first-class but can always be treated as such. 
 
@@ -77,6 +79,7 @@ Notes: Only Java's static fields are initialized lazily.
 | pattern matching               | yes    | yes     | yes     | yes   | no    | no       |          |
 | pattern matching in parameters | yes    |         | yes     | no    | no    | no       |          |
 | reflection                     |        |         |         |       | yes   |          |          |
+| metaprogramming                |        |         |         |       |       |          |          |
 
 | CONCURRENCY             | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |-------------------------+--------+---------+---------+-------+-------+----------+----------|
