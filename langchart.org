@@ -78,4 +78,4 @@ Notes: Only Java's static fields are initialized lazily.
 | true parallelism        | yes    | yes     | yes     | yes   | yes   | no       | yes      |
 | unmanaged mutable state |        | no      | no      | yes   | yes   | yes      |          |
 
-Notes: CPython's global interpreter lock prevents to threads from making progress at the same time.
+Notes: CPython's global interpreter lock prevents two threads from making progress at the same time.
