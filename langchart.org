@@ -1,7 +1,7 @@
-| TYPE DISCIPLINE  | Clojure | CPython | Erlang | F#/OCaml | Haskell | Java | Scala |
-|------------------+---------+---------+--------+----------+---------+------+-------|
-| strongly typed   | yes     | yes     | yes    | yes      | yes     | yes  | yes   |
-| statically typed | no      | no      | no     | yes      | yes     | yes  | yes   |
+| TYPE DISCIPLINE  | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|------------------+---------+--------+----------+---------+------+--------+-------|
+| strongly typed   | yes     | yes    | yes      | yes     | yes  | yes    | yes   |
+| statically typed | no      | no     | yes      | yes     | yes  | no     | yes   |
 
 
 | STATIC TYPING            | F#/OCaml | Haskell | Java | Scala |
@@ -24,79 +24,80 @@
 Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 
 
-| OBJECTS                                                        | Clojure | CPython | Erlang | F#/OCaml | Haskell | Java | Scala |
-|----------------------------------------------------------------+---------+---------+--------+----------+---------+------+-------|
-| objects (function/data containers that are first-class values) |         | yes     |        | yes      |         | yes  | yes   |
-| all values are objects                                         |         | yes     |        |          |         | no   | yes   |
-| interfaces (contracts) with abstract functions                 |         | no      |        |          |         | yes  | yes   |
-| interfaces (contracts) with abstract data                      |         | no      |        |          |         | no   | yes   |
-| interface inheritance                                          |         | yes     |        |          |         | yes  | yes   |
-| concrete inheritance                                           |         | yes     |        |          |         | yes  | yes   |
-| multiple interface inheritance                                 |         | n/a     |        |          |         | yes  | yes   |
-| multiple concrete inheritance                                  |         | yes     |        |          |         | no   | yes   |
-| anonymous classes                                              |         |         |        |          |         | yes  | yes   |
-| data hiding enforced                                           |         | no      |        |          |         | yes  | yes   |
+| OBJECTS                                                        | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|----------------------------------------------------------------+---------+--------+----------+---------+------+--------+-------|
+| objects (function/data containers that are first-class values) |         |        | yes      |         | yes  | yes    | yes   |
+| all values are objects                                         |         |        |          |         | no   | yes    | yes   |
+| interfaces (contracts) with abstract functions                 |         |        |          |         | yes  | no     | yes   |
+| interfaces (contracts) with abstract data                      |         |        |          |         | no   | no     | yes   |
+| interface inheritance                                          |         |        |          |         | yes  | yes    | yes   |
+| concrete inheritance                                           |         |        |          |         | yes  | yes    | yes   |
+| multiple interface inheritance                                 |         |        |          |         | yes  | n/a    | yes   |
+| multiple concrete inheritance                                  |         |        |          |         | no   | yes    | yes   |
+| anonymous classes                                              |         |        |          |         | yes  |        | yes   |
+| data hiding enforced                                           |         |        |          |         | yes  | no     | yes   |
 
 
-| FUNCTIONS                         | Clojure | CPython | Erlang | F#/OCaml | Haskell | Java | Scala |
-|-----------------------------------+---------+---------+--------+----------+---------+------+-------|
-| operators evaluate like functions |         |         | no     |          |         | no   | yes   |
-| operator overloading              |         | yes     |        |          | yes     | no   | yes   |
-| first-class functions             | yes     | yes     | yes    |          | yes     | no   | yes   |
-| anonymous functions               | yes     | yes     | yes    |          | yes     | no   | yes   |
-| nested named functions            |         | yes     |        |          |         | no   | yes   |
-| currying                          |         |         |        |          | yes     | no   | yes   |
-| partial application of functions  |         | stdlib  |        |          | yes     | no   | yes   |
-| full tail call optimization       | no      | no      | yes    |          | yes     | no   | no    |
-| overloading                       | yes     | no      |        |          |         | yes  | yes   |
-| default arguments                 |         | yes     |        |          |         | no   | yes   |
-| named arguments                   |         | yes     |        |          |         | no   | yes   |
-| variable number arguments         |         |         |        |          |         | yes  | yes   |
-| unstructured side-effects         | yes     | yes     | yes    |          | no      | yes  | yes   |
-| generators                        |         |         |        |          |         |      |       |
-| continuations                     |         |         |        |          |         |      |       |
+| FUNCTIONS                         | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|-----------------------------------+---------+--------+----------+---------+------+--------+-------|
+| operators evaluate like functions |         | no     |          |         | no   |        | yes   |
+| operator overloading              |         |        |          | yes     | no   | yes    | yes   |
+| first-class functions             | yes     | yes    |          | yes     | no   | yes    | yes   |
+| anonymous functions               | yes     | yes    |          | yes     | no   | yes    | yes   |
+| nested named functions            |         |        |          |         | no   | yes    | yes   |
+| currying                          |         |        |          | yes     | no   |        | yes   |
+| partial application of functions  |         |        |          | yes     | no   | stdlib | yes   |
+| full tail call optimization       | no      | yes    |          | yes     | no   | no     | no    |
+| overloading                       | yes     |        |          |         | yes  | no     | yes   |
+| default arguments                 |         |        |          |         | no   | yes    | yes   |
+| named arguments                   |         |        |          |         | no   | yes    | yes   |
+| variable number arguments         |         |        |          |         | yes  |        | yes   |
+| unstructured side-effects         | yes     | yes    |          | no      | yes  | yes    | yes   |
+| generators                        |         |        |          |         |      |        |       |
+| continuations                     |         |        |          |         |      |        |       |
 
 Notes: Scala's methods aren't themselves first-class but can always be treated as such. 
 
 
-| BINDINGS & SCOPE  | Clojure | CPython | Erlang | F#/OCaml | Haskell | Java | Scala |
-|-------------------+---------+---------+--------+----------+---------+------+-------|
-| lexical scope     |         | no      |        |          |         | yes  | yes   |
-| single assignment | no      | no      | yes    |          | yes     | both | both  |
-| closures          |         |         |        |          |         | no   | yes   |
+| BINDINGS & SCOPE  | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|-------------------+---------+--------+----------+---------+------+--------+-------|
+| lexical scope     |         |        |          |         | yes  | no     | yes   |
+| single assignment | no      | yes    |          | yes     | both | no     | both  |
+| closures          |         |        |          |         | no   |        | yes   |
 
 
-| LIBRARY             | Clojure | CPython | Erlang | F#/OCaml | Haskell | Java | Scala |
-|---------------------+---------+---------+--------+----------+---------+------+-------|
-| implicit functions  |         |         |        |          |         | no   | yes   |
-| implicit parameters |         |         |        |          |         | no   | yes   |
-| first-class modules |         | yes     |        |          |         |      |       |
+| LIBRARY             | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|---------------------+---------+--------+----------+---------+------+--------+-------|
+| implicit functions  |         |        |          |         | no   |        | yes   |
+| implicit parameters |         |        |          |         | no   |        | yes   |
+| first-class modules |         |        |          |         |      | yes    |       |
 
 Notes: Scala 2.8's package objects can only add members to a package.
 
 
-| EVALUATION                            | Clojure | CPython | Erlang | F#/OCaml | Haskell | Java | Scala |
-|---------------------------------------+---------+---------+--------+----------+---------+------+-------|
-| lazy evaluation                       |         | no      |        |          | yes     | no   | no    |
-| lazy initialization of fields         |         |         |        |          |         | no   | yes   |
-| delayed parameter evaluation possible |         |         |        |          |         | no   | yes   |
-| uniform access principle              |         | no      |        |          |         | no   | yes   |
+| EVALUATION                            | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|---------------------------------------+---------+--------+----------+---------+------+--------+-------|
+| lazy evaluation                       |         |        |          | yes     | no   | no     | no    |
+| lazy initialization of fields         |         |        |          |         | no   |        | yes   |
+| delayed parameter evaluation possible |         |        |          |         | no   |        | yes   |
+| uniform access principle              |         |        |          |         | no   | no     | yes   |
 
 Notes: Only Java's static fields are initialized lazily.
 
 
-| LANGUAGE                       | Clojure | CPython | Erlang | F#/OCaml | Haskell | Java | Scala |
-|--------------------------------+---------+---------+--------+----------+---------+------+-------|
-| preprocessor                   | yes     |         |        |          |         | no   | no    |
-| pattern matching               | yes     | no      | yes    |          | yes     | no   | yes   |
-| pattern matching in parameters |         | no      | yes    |          | yes     | no   | no    |
-| reflection                     |         |         |        |          |         | yes  |       |
-| metaprogramming                |         |         |        |          |         |      |       |
+| LANGUAGE                       | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|--------------------------------+---------+--------+----------+---------+------+--------+-------|
+| preprocessor                   | yes     |        |          |         | no   |        | no    |
+| pattern matching               | yes     | yes    |          | yes     | no   | no     | yes   |
+| pattern matching in parameters |         | yes    |          | yes     | no   | no     | no    |
+| reflection                     |         |        |          |         | yes  |        |       |
+| metaprogramming                |         |        |          |         |      |        |       |
 
-| CONCURRENCY             | Clojure | CPython | Erlang | Haskell | F#/OCaml | Java | Scala |
-|-------------------------+---------+---------+--------+---------+----------+------+-------|
-| true parallelism        | yes     | no      | yes    | yes     | yes      | yes  | yes   |
-| unmanaged mutable state | no      | yes     |        | no      |          | yes  | yes   |
+| CONCURRENCY             | Clojure | Erlang | Haskell | F#/OCaml | Java | Python | Scala |
+|-------------------------+---------+--------+---------+----------+------+--------+-------|
+| true parallelism        | yes     | yes    | yes     | yes      | yes  | no     | yes   |
+| unmanaged mutable state | no      |        | no      |          | yes  | yes    | yes   |
 
-Notes: CPython's global interpreter lock prevents two threads from making progress at the same time.
-n
+Notes: I'm only considering CPython, whose global interpreter lock prevents two threads from making progress at the same time.
+Jython and IronPython do not suffer from this problem.
+
