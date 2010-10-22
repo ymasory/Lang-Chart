@@ -58,7 +58,7 @@ Notes: Scala 2.8's package objects can only add members to a package.
 
 | EVALUATION                            | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |---------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| lazy evaluation                       |        |         |         |       |       |          |          |
+| lazy evaluation                       |        |         | yes     | no    | no    | no       |          |
 | lazy initialization of fields         |        |         |         | yes   | no    |          |          |
 | delayed parameter evaluation possible |        |         |         | yes   | no    |          |          |
 | uniform access principle              |        |         |         | yes   | no    | no       |          |
