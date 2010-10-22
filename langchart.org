@@ -1,12 +1,13 @@
-| TYPE DISCIPLINE   | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|-------------------+--------+---------+---------+-------+-------+----------+----------|
-| strongly typed    | yes    | yes     | yes     | yes   | yes   | yes      |          |
-| statically typed  | no     | no      | yes     | yes   | yes   | no       |          |
-| type inference    | n/a    | n/a     | yes     | yes   | no    | n/a      | yes      |
-| type parameters   |        |         | yes     | yes   | yes   |          |          |
-| abstract types    |        |         |         | yes   | no    |          |          |
-| structural types  |        |         |         | yes   | no    | yes      |          |
-| existential types |        |         |         | yes   | no    |          |          |
+| TYPE DISCIPLINE     | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
+|---------------------+--------+---------+---------+-------+-------+----------+----------|
+| strongly typed      | yes    | yes     | yes     | yes   | yes   | yes      |          |
+| statically typed    | no     | no      | yes     | yes   | yes   | no       |          |
+| type inference      | n/a    | n/a     | yes     | yes   | no    | n/a      | yes      |
+| type parameters     |        |         | yes     | yes   | yes   |          |          |
+| abstract types      |        |         |         | yes   | no    |          |          |
+| structural types    |        |         |         | yes   | no    | yes      |          |
+| existential types   |        |         |         | yes   | no    |          |          |
+| higher kinded types |        |         |         | yes   | no    |          |          |
 
 Notes: Python's duck typing is similar in spirit to structural types.
 
@@ -71,7 +72,7 @@ Notes: Only Java's static fields are initialized lazily.
 | preprocessor                   |        | yes     |         | no    | no    |          |          |
 | pattern matching               | yes    | yes     | yes     | yes   | no    | no       |          |
 | pattern matching in parameters | yes    |         | yes     | no    | no    | no       |          |
-
+| reflection                     |        |         |         |       | yes   |          |          |
 
 | CONCURRENCY             | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |-------------------------+--------+---------+---------+-------+-------+----------+----------|
