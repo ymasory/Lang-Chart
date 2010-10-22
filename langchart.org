@@ -22,6 +22,7 @@ Notes: Python's duck typing is similar in spirit to structural types.
 | concrete inheritance                                           |        |         |         | yes   | yes   | yes      |          |
 | multiple interface inheritance                                 |        |         |         | yes   | yes   | n/a      |          |
 | multiple concrete inheritance                                  |        |         |         | yes   | no    | yes      |          |
+| anonymous classes                                              |        |         |         | yes   | yes   |          |          |
 | data hiding enforced                                           |        |         |         | yes   | yes   | no       |          |
 
 
@@ -31,12 +32,13 @@ Notes: Python's duck typing is similar in spirit to structural types.
 | operator overloading              |        |         | yes     | yes   | no    | yes      |          |
 | first-class functions             | yes    | yes     | yes     | yes   | no    | yes      |          |
 | anonymous functions               | yes    | yes     | yes     | yes   | no    | yes      |          |
+| nested named functions            |        |         |         | yes   | no    | yes      |          |
 | currying                          |        |         | yes     | yes   | no    |          |          |
 | partial application of functions  |        |         | yes     | yes   | no    | stdlib   |          |
 | full tail call optimization       | yes    | no      | yes     | no    | no    | no       |          |
 | overloading                       |        | yes     |         | yes   | yes   | no       |          |
-| default parameters                |        |         |         | yes   | no    | yes      |          |
-| named parameters                  |        |         |         | no    | no    | yes      |          |
+| default arguments                 |        |         |         | yes   | no    | yes      |          |
+| named arguments                   |        |         |         | yes   | no    | yes      |          |
 | variable number arguments         |        |         |         | yes   | yes   |          |          |
 | unstructured side-effects         | yes    | yes     | no      | yes   | yes   | yes      |          |
 
