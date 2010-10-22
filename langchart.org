@@ -1,13 +1,20 @@
-| TYPE DISCIPLINE     | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
-|---------------------+--------+---------+---------+-------+-------+----------+----------|
-| strongly typed      | yes    | yes     | yes     | yes   | yes   | yes      |          |
-| statically typed    | no     | no      | yes     | yes   | yes   | no       |          |
-| type inference      | n/a    | n/a     | yes     | yes   | no    | n/a      | yes      |
-| type parameters     |        |         | yes     | yes   | yes   |          |          |
-| abstract types      |        |         |         | yes   | no    |          |          |
-| structural types    |        |         |         | yes   | no    | yes      |          |
-| existential types   |        |         |         | yes   | no    |          |          |
-| higher kinded types |        |         |         | yes   | no    |          |          |
+| TYPE DISCIPLINE       | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
+|-----------------------+--------+---------+---------+-------+-------+----------+----------|
+| strongly typed        | yes    | yes     | yes     | yes   | yes   | yes      |          |
+| statically typed      | no     | no      | yes     | yes   | yes   | no       |          |
+| type inference        | n/a    | n/a     | yes     | yes   | no    | n/a      | yes      |
+| polymorphic functions |        |         | yes     | yes   | yes   |          |          |
+| polymorphic classes   | n/a    |         |         | yes   | yes   | no       |          |
+| abstract types        |        |         |         | yes   | no    |          |          |
+| views                 |        |         |         |       |       |          |          |
+| type bounds           |        |         |         |       |       |          |          |
+| self types            |        |         |         |       |       |          |          |
+| path-dependent types  |        |         |         |       |       |          |          |
+| bottom types          |        |         |         |       |       |          |          |
+| compound types        |        |         |         |       |       |          |          |
+| structural types      |        |         |         | yes   | no    | yes      |          |
+| existential types     |        |         |         | yes   | no    |          |          |
+| higher kinded types   |        |         |         | yes   | no    |          |          |
 
 Notes: Python's duck typing is similar in spirit to structural types.
 
