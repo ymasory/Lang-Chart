@@ -1,7 +1,9 @@
-| TYPE DISCIPLINE  | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
-|------------------+---------+--------+----------+---------+------+--------+-------|
-| strongly typed   | yes     | yes    | yes      | yes     | yes  | yes    | yes   |
-| statically typed | no      | no     | yes      | yes     | yes  | no     | yes   |
+| TYPE DISCIPLINE         | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|-------------------------+---------+--------+----------+---------+------+--------+-------|
+| strongly typed          | yes     | yes    | yes      | yes     | yes  | yes    | yes   |
+| statically typed        | no      | no     | yes      | yes     | yes  | no     | yes   |
+| coercion                |         |        |          | no      | yes  | yes    | yes   |
+| user-defined conversion |         |        |          |         | no   |        | yes   |
 
 
 | STATIC TYPING            | F#/OCaml | Haskell | Java | Scala |
