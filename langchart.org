@@ -5,35 +5,35 @@
 | type inference    | n/a    | n/a     | yes     | yes   | no    | n/a      | yes      |
 | type parameters   |        |         | yes     | yes   | yes   |          |          |
 | abstract types    |        |         |         | yes   | no    |          |          |
-| structural types  |        |         |         |       |       | yes      |          |
-| existential types |        |         |         |       |       |          |          |
+| structural types  |        |         |         | yes   | no    | yes      |          |
+| existential types |        |         |         | yes   | no    |          |          |
 
 Notes: Python's duck typing is similar in spirit to structural types.
 
 
 | OBJECTS                                                        | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |----------------------------------------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| objects (function/data containers that are first-class values) |        |         |         | yes   | yes   | yes      |          |
-| all values are objects                                         |        |         |         | yes   | no    |          |          |
-| interfaces (contracts) with abstract functions                 |        |         |         | yes   | yes   |          |          |
-| interfaces (contracts) with abstract data                      |        |         |         | yes   | no    |          |          |
+| objects (function/data containers that are first-class values) |        |         |         | yes   | yes   | yes      | yes      |
+| all values are objects                                         |        |         |         | yes   | no    | yes      |          |
+| interfaces (contracts) with abstract functions                 |        |         |         | yes   | yes   | no       |          |
+| interfaces (contracts) with abstract data                      |        |         |         | yes   | no    | no       |          |
 | interface inheritance                                          |        |         |         | yes   | yes   | yes      |          |
-| concrete inheritance                                           |        |         |         | yes   | yes   |          |          |
-| multiple interface inheritance                                 |        |         |         | yes   | yes   |          |          |
-| multiple concrete inheritance                                  |        |         |         | yes   | no    |          |          |
+| concrete inheritance                                           |        |         |         | yes   | yes   | yes      |          |
+| multiple interface inheritance                                 |        |         |         | yes   | yes   | n/a      |          |
+| multiple concrete inheritance                                  |        |         |         | yes   | no    | yes      |          |
 | data hiding enforced                                           |        |         |         | yes   | yes   | no       |          |
 
 
 | FUNCTIONS                         | Erlang | Clojure | Haskell | Scala | Java6 | CPython3 | F#/OCaml |
 |-----------------------------------+--------+---------+---------+-------+-------+----------+----------|
-| operators evaluate like functions |        |         |         | yes   | no    |          |          |
+| operators evaluate like functions | no     |         |         | yes   | no    |          |          |
 | operator overloading              |        |         | yes     | yes   | no    | yes      |          |
 | first-class functions             | yes    | yes     | yes     | yes   | no    | yes      |          |
 | anonymous functions               | yes    | yes     | yes     | yes   | no    | yes      |          |
 | currying                          |        |         | yes     | yes   | no    |          |          |
-| partial application of functions  |        |         | yes     | yes   | no    |          |          |
-| full tail call optimization       | yes    | no      |         | no    |       | no       |          |
-| overloading                       |        | yes     |         | yes   | yes   |          |          |
+| partial application of functions  |        |         | yes     | yes   | no    | stdlib   |          |
+| full tail call optimization       | yes    | no      | yes     | no    | no    | no       |          |
+| overloading                       |        | yes     |         | yes   | yes   | no       |          |
 | default parameters                |        |         |         | yes   | no    | yes      |          |
 | unstructured side-effects         | yes    | yes     | no      | yes   | yes   | yes      |          |
 
