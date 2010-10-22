@@ -3,7 +3,6 @@
 | strongly typed          | yes     | yes    | yes      | yes     | yes  | yes    | yes   |
 | statically typed        | no      | no     | yes      | yes     | yes  | no     | yes   |
 | coercion                |         |        |          | no      | yes  | yes    | yes   |
-| user-defined conversion |         |        |          |         | no   |        | yes   |
 
 
 | STATIC TYPING            | F#/OCaml | Haskell | Java | Scala |
@@ -71,11 +70,12 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 | closures          |         |        |          |         | no   |        | yes   |
 
 
-| LIBRARY             | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
-|---------------------+---------+--------+----------+---------+------+--------+-------|
-| implicit functions  |         |        |          |         | no   |        | yes   |
-| implicit parameters |         |        |          |         | no   |        | yes   |
-| first-class modules |         |        |          |         |      | yes    |       |
+| LIBRARY                 | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|-------------------------+---------+--------+----------+---------+------+--------+-------|
+| user-defined conversion |         |        |          |         | no   |        | yes   |
+| implicit functions      |         |        |          |         | no   |        | yes   |
+| implicit parameters     |         |        |          |         | no   |        | yes   |
+| first-class modules     |         |        |          |         |      | yes    |       |
 
 Notes: Scala 2.8's package objects can only add members to a package.
 
