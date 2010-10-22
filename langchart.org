@@ -36,6 +36,8 @@ Notes: Python's duck typing is similar in spirit to structural types.
 | full tail call optimization       | yes    | no      | yes     | no    | no    | no       |          |
 | overloading                       |        | yes     |         | yes   | yes   | no       |          |
 | default parameters                |        |         |         | yes   | no    | yes      |          |
+| named parameters                  |        |         |         | no    | no    | yes      |          |
+| variable number arguments         |        |         |         | yes   | yes   |          |          |
 | unstructured side-effects         | yes    | yes     | no      | yes   | yes   | yes      |          |
 
 Notes: Scala's methods aren't themselves first-class but can always be treated as such. 
