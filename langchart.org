@@ -105,6 +105,9 @@ Notes: Only Java's static fields are initialized lazily.
 | language support for tuples |         | yes    |          | yes     |      | yes    | yes   |
 | language support for lists  | yes     | yes    |          | yes     | no   | yes    | no    |
 | language support for maps   | yes     | no     |          |         | no   | yes    | no    |
+| list comprehensions         |         | yes    |          | yes     | no   | yes    | yes   |
+
+Notes: Scala's for/while comprehensions are generalizations of list comprehensions, although they do not necessarily result in Lists.
 
 
 | CONCURRENCY             | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
