@@ -99,10 +99,18 @@ Notes: Only Java's static fields are initialized lazily.
 | reflection                     |         |        |          |         | yes  |        |       |
 | metaprogramming                |         |        |          |         |      |        |       |
 
-| CONCURRENCY             | Clojure | Erlang | Haskell | F#/OCaml | Java | Python | Scala |
-|-------------------------+---------+--------+---------+----------+------+--------+-------|
-| true parallelism        | yes     | yes    | yes     | yes      | yes  | no     | yes   |
-| unmanaged mutable state | no      |        | no      |          | yes  | yes    | yes   |
+
+| Collections                 | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|-----------------------------+---------+--------+----------+---------+------+--------+-------|
+| language support for tuples |         | yes    |          | yes     |      | yes    | yes   |
+| language support for lists  | yes     | yes    |          | yes     | no   | yes    | no    |
+| language support for maps   | yes     | no     |          |         | no   | yes    | no    |
+
+
+| CONCURRENCY             | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|-------------------------+---------+--------+----------+---------+------+--------+-------|
+| true parallelism        | yes     | yes    | yes      | yes     | yes  | no     | yes   |
+| unmanaged mutable state | no      |        |          | no      | yes  | yes    | yes   |
 
 Notes: I'm only considering CPython, whose global interpreter lock prevents two threads from making progress at the same time.
 Jython and IronPython do not suffer from this problem.
