@@ -21,6 +21,7 @@
 | higher kinded types      |          |         | no   | yes   |
 | structural types         |          |         | no   | yes   |
 | views                    |          |         |      | yes   |
+| view bounds              |          |         |      | yes   |
 | sum types                |          |         |      |       |
 | product types            |          |         |      |       |
 | recursive types          |          |         |      |       |
@@ -77,11 +78,12 @@ Notes: Objects are function/data containers that are first-class values.
 Notes: Scala's methods aren't themselves first-class but can always be treated as such. 
 
 
-| BINDINGS & SCOPE  | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
-|-------------------+---------+--------+----------+---------+------+--------+-------|
-| lexical scope     |         |        |          |         | yes  | no     | yes   |
-| single assignment | no      | yes    |          | yes     | both | no     | both  |
-| closures          |         |        |          |         | no   |        | yes   |
+| BINDINGS & SCOPE              | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|-------------------------------+---------+--------+----------+---------+------+--------+-------|
+| lexical scope                 |         |        |          |         | yes  | no     | yes   |
+| single assignment variables   | no      | yes    |          | yes     | yes  | no     | yes   |
+| multiple assignment variables | yes     | no     |          | no      | yes  | yes    | yes   |
+| closures                      |         |        |          |         | no   |        | yes   |
 
 
 | CONTROL    | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
