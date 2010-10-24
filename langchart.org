@@ -3,6 +3,7 @@
 | strongly typed   | yes     | yes    | yes      | yes     | yes  | yes    | yes   |
 | statically typed | no      | no     | yes      | yes     | yes  | no     | yes   |
 | coercion         |         |        |          | no      | yes  | yes    | yes   |
+| null reference   |         |        |          | no      | yes  | yes    | yes   |
 | strict booleans  | no      |        |          | yes     | yes  | no     | yes   |
 
 
