@@ -100,14 +100,14 @@ Notes: Only Java's static fields are initialized lazily.
 | metaprogramming                |         |        |          |         |      |        |       |
 
 
-| Collections                 | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
-|-----------------------------+---------+--------+----------+---------+------+--------+-------|
-| language support for tuples |         | yes    |          | yes     |      | yes    | yes   |
-| language support for lists  | yes     | yes    |          | yes     | no   | yes    | no    |
-| language support for maps   | yes     | no     |          |         | no   | yes    | no    |
-| list comprehensions         |         | yes    |          | yes     | no   | yes    | yes   |
-
-Notes: Scala's for/while comprehensions are generalizations of list comprehensions, although they do not necessarily result in Lists.
+| COLLECTIONS SYNTAX | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|--------------------+---------+--------+----------+---------+------+--------+-------|
+| lists              | yes     | yes    |          | yes     | no   | yes    | no    |
+| indexing           |         |        |          |         | no   | yes    | no    |
+| slicing            |         |        |          |         | no   | yes    | no    |
+| tuples             |         | yes    |          | yes     |      | yes    | yes   |
+| comprehensions     |         | yes    |          | yes     | no   | yes    | yes   |
+| maps               | yes     | no     |          |         | no   | yes    | no    |
 
 
 | CONCURRENCY             | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
