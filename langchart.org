@@ -85,6 +85,8 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 | single assignment variables   | no      | yes    |          | yes     | yes  | no     | yes   |
 | multiple assignment variables | yes     | no     |          | no      | yes  | yes    | yes   |
 | closures                      |         |        |          |         | no   |        | yes   |
+| pattern matching               | yes     | yes    |          | yes     | no   | no     | yes   |
+| pattern matching in parameters |         | yes    |          | yes     | no   | no     | no    |
 
 
 | CONTROL    | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
@@ -118,8 +120,6 @@ Notes: Only Java's static fields are initialized lazily.
 | LANGUAGE                       | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
 |--------------------------------+---------+--------+----------+---------+------+--------+-------|
 | preprocessor                   | yes     |        |          |         | no   |        | no    |
-| pattern matching               | yes     | yes    |          | yes     | no   | no     | yes   |
-| pattern matching in parameters |         | yes    |          | yes     | no   | no     | no    |
 | reflection                     |         |        |          |         | yes  |        |       |
 | metaprogramming                |         |        |          |         |      |        |       |
 
