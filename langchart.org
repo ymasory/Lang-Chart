@@ -134,8 +134,9 @@ Notes: Only Java's static fields are initialized lazily.
 | COLLECTIONS SYNTAX | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
 |--------------------+---------+--------+----+---------+------+--------+-------|
 | lists              | yes     | yes    |    | yes     | no   | yes    | no    |
-| indexing           |         |        |    |         | no   | yes    | no    |
-| slicing            |         |        |    |         | no   | yes    | no    |
+| indexes            |         |        |    |         | no   | yes    | no    |
+| ranges             |         |        |    | yes     | no   | no     | no    |
+| slices             |         |        |    |         | no   | yes    | no    |
 | tuples             |         | yes    |    | yes     |      | yes    | yes   |
 | comprehensions     |         | yes    |    | yes     | no   | yes    | yes   |
 | maps               | yes     | no     |    |         | no   | yes    | no    |
