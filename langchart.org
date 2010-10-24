@@ -1,11 +1,12 @@
-| TYPE DISCIPLINE  | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
-|------------------+---------+--------+----------+---------+------+--------+-------|
-| strongly typed   | yes     | yes    | yes      | yes     | yes  | yes    | yes   |
-| statically typed | no      | no     | yes      | yes     | yes  | no     | yes   |
-| coercion         |         |        |          | no      | yes  | yes    | yes   |
-| null reference   |         |        |          | no      | yes  | yes    | yes   |
-| strict booleans  | no      |        |          | yes     | yes  | no     | yes   |
-| ?reification?    |         |        |          |         |      |        |       |
+| TYPE DISCIPLINE    | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|--------------------+---------+--------+----------+---------+------+--------+-------|
+| strongly typed     | yes     | yes    | yes      | yes     | yes  | yes    | yes   |
+| statically typed   | no      | no     | yes      | yes     | yes  | no     | yes   |
+| coercion           |         |        |          | no      | yes  | yes    | yes   |
+| null reference     |         |        |          | no      | yes  | yes    | yes   |
+| strict booleans    | no      |        |          | yes     | yes  | no     | yes   |
+| most types reified |         |        |          | no      | yes  | yes    | yes   |
+| all types reified  |         |        |          | no      | no   | yes    | no    |
 
 
 | STATIC TYPES         | F#/OCaml | Haskell | Java | Scala |
