@@ -8,6 +8,8 @@
 | most types reified |         |        |     | no      | yes  | yes    | yes   |
 | all types reified  |         |        |     | no      | no   | yes    | no    |
 
+Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
+
 
 | STATIC TYPES         | F#  | Haskell | Java | Scala |
 |----------------------+-----+---------+------+-------|
@@ -26,8 +28,6 @@
 | type bounds          |     |         | yes  | yes   |
 | views                |     |         |      | yes   |
 | view bounds          |     |         |      | yes   |
-
-Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 
 
 | OBJECTS                | Clojure | Erlang | F#  | Haskell | Java | Python | Scala |
