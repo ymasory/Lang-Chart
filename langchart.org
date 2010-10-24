@@ -33,14 +33,25 @@ Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 |----------------------------------------------------------------+---------+--------+----------+---------+------+--------+-------|
 | objects (function/data containers that are first-class values) |         |        | yes      |         | yes  | yes    | yes   |
 | all values are objects                                         |         |        |          |         | no   | yes    | yes   |
-| interfaces (contracts) with abstract functions                 |         |        |          |         | yes  | no     | yes   |
-| interfaces (contracts) with abstract data                      |         |        |          |         | no   | no     | yes   |
-| interface inheritance                                          |         |        |          |         | yes  | yes    | yes   |
-| concrete inheritance                                           |         |        |          |         | yes  | yes    | yes   |
-| multiple interface inheritance                                 |         |        |          |         | yes  | n/a    | yes   |
-| multiple concrete inheritance                                  |         |        |          |         | no   | yes    | yes   |
-| anonymous classes                                              |         |        |          |         | yes  |        | yes   |
 | data hiding enforced                                           |         |        |          |         | yes  | no     | yes   |
+
+
+| CLASSES                     | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|-----------------------------+---------+--------+----------+---------+------+--------+-------|
+| multiple constructors       |         |        |          |         | yes  |        | yes   |
+| anonymous classes           |         |        |          |         | yes  |        | yes   |
+| reference to current object |         |        |          |         | yes  | no     | yes   |
+
+
+| INHERITANCE                                    | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|------------------------------------------------+---------+--------+----------+---------+------+--------+-------|
+| interfaces (contracts) with abstract functions |         |        |          |         | yes  | no     | yes   |
+| interfaces (contracts) with abstract data      |         |        |          |         | no   | no     | yes   |
+| interface inheritance                          |         |        |          |         | yes  | yes    | yes   |
+| concrete inheritance                           |         |        |          |         | yes  | yes    | yes   |
+| multiple interface inheritance                 |         |        |          |         | yes  | n/a    | yes   |
+| multiple concrete inheritance                  |         |        |          |         | no   | yes    | yes   |
+
 
 
 | FUNCTIONS                         | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
@@ -69,6 +80,11 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 | lexical scope     |         |        |          |         | yes  | no     | yes   |
 | single assignment | no      | yes    |          | yes     | both | no     | both  |
 | closures          |         |        |          |         | no   |        | yes   |
+
+
+| CONTROL    | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|------------+---------+--------+----------+---------+------+--------+-------|
+| exceptions |         |        |          |         | yes  | yes    | yes   |
 
 
 | LIBRARY                 | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
@@ -115,6 +131,6 @@ Notes: Only Java's static fields are initialized lazily.
 | true parallelism        | yes     | yes    | yes      | yes     | yes  | no     | yes   |
 | unmanaged mutable state | no      |        |          | no      | yes  | yes    | yes   |
 
-Notes: I'm only considering CPython, whose global interpreter lock prevents two threads from making progress at the same time.
+Notes: CPython's global interpreter lock prevents two threads from making progress at the same time.
 Jython and IronPython do not suffer from this problem.
 
