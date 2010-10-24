@@ -5,27 +5,26 @@
 | coercion         |         |        |          | no      | yes  | yes    | yes   |
 | null reference   |         |        |          | no      | yes  | yes    | yes   |
 | strict booleans  | no      |        |          | yes     | yes  | no     | yes   |
+| ?reification?    |         |        |          |         |      |        |       |
 
 
-| STATIC TYPING            | F#/OCaml | Haskell | Java | Scala |
-|--------------------------+----------+---------+------+-------|
-| type inference           | yes      | yes     | no   | yes   |
-| function type parameters |          | yes     | yes  | yes   |
-| type parameters reified  |          |         | no   | no    |
-| existential types        |          |         | yes  | yes   |
-| abstract types           |          |         | no   | yes   |
-| type bounds              |          |         | yes  | yes   |
-| self types               |          |         | no   | yes   |
-| path-dependent types     |          |         |      | yes   |
-| bottom types             |          |         | no   | yes   |
-| compound types           |          |         |      | yes   |
-| higher kinded types      |          |         | no   | yes   |
-| structural types         |          |         | no   | yes   |
-| views                    |          |         |      | yes   |
-| view bounds              |          |         |      | yes   |
-| sum types                |          |         |      |       |
-| product types            |          |         |      |       |
-| recursive types          |          |         |      |       |
+| STATIC TYPES         | F#/OCaml | Haskell | Java | Scala |
+|----------------------+----------+---------+------+-------|
+| type inference       | yes      | yes     | no   | yes   |
+| path-dependent types |          |         |      | yes   |
+| existential    types |          |         | yes  | yes   |
+| abstract       types |          |         | no   | yes   |
+| self           types |          |         | no   | yes   |
+| bottom         types |          |         | no   | yes   |
+| compound       types |          |         |      | yes   |
+| higher kinded  types |          |         | no   | yes   |
+| structural     types |          |         | no   | yes   |
+| sum            types |          |         |      |       |
+| product        types |          |         |      |       |
+| recursive      types |          |         |      |       |
+| type bounds          |          |         | yes  | yes   |
+| views                |          |         |      | yes   |
+| view bounds          |          |         |      | yes   |
 
 Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 
@@ -60,6 +59,7 @@ Notes: Objects are function/data containers that are first-class values.
 
 | FUNCTIONS                         | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
 |-----------------------------------+---------+--------+----------+---------+------+--------+-------|
+| function type parameters          |         |        |          |         | yes  | no     | yes   |
 | operators evaluate like functions |         | no     |          |         | no   |        | yes   |
 | operator overloading              |         |        |          | yes     | no   | yes    | yes   |
 | first-class functions             | yes     | yes    |          | yes     | no   | yes    | yes   |
