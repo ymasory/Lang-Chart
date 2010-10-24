@@ -32,7 +32,7 @@ Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 |------------------------+---------+--------+----------+---------+------+--------+-------|
 | objects                |         |        | yes      |         | yes  | yes    | yes   |
 | all values are objects |         |        |          |         | no   | yes    | yes   |
-| data hiding enforced   |         |        |          |         | yes  | no     | yes   |
+| enforced encapsulation |         |        |          |         | yes  | no     | yes   |
 
 Notes: Objects are function/data containers that are first-class values.
 
