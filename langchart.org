@@ -10,7 +10,6 @@
 |--------------------------+----------+---------+------+-------|
 | type inference           | yes      | yes     | no   | yes   |
 | function type parameters |          | yes     | yes  | yes   |
-| class type parameters    |          |         | yes  | yes   |
 | type parameters reified  |          |         | no   | no    |
 | existential types        |          |         | yes  | yes   |
 | abstract types           |          |         | no   | yes   |
@@ -29,18 +28,21 @@
 Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 
 
-| OBJECTS                                                        | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
-|----------------------------------------------------------------+---------+--------+----------+---------+------+--------+-------|
-| objects (function/data containers that are first-class values) |         |        | yes      |         | yes  | yes    | yes   |
-| all values are objects                                         |         |        |          |         | no   | yes    | yes   |
-| data hiding enforced                                           |         |        |          |         | yes  | no     | yes   |
+| OBJECTS                | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
+|------------------------+---------+--------+----------+---------+------+--------+-------|
+| objects                |         |        | yes      |         | yes  | yes    | yes   |
+| all values are objects |         |        |          |         | no   | yes    | yes   |
+| data hiding enforced   |         |        |          |         | yes  | no     | yes   |
+
+Notes: Objects are function/data containers that are first-class values.
 
 
-| CLASSES                     | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
-|-----------------------------+---------+--------+----------+---------+------+--------+-------|
-| multiple constructors       |         |        |          |         | yes  |        | yes   |
-| anonymous classes           |         |        |          |         | yes  |        | yes   |
-| reference to current object |         |        |          |         | yes  | no     | yes   |
+| CLASSES                     | F#/OCaml | Java | Python | Scala |
+|-----------------------------+----------+------+--------+-------|
+| class type parameters       |          | yes  | no     | yes   |
+| multiple constructors       |          | yes  |        | yes   |
+| anonymous classes           |          | yes  |        | yes   |
+| reference to current object |          | yes  | no     | yes   |
 
 
 | INHERITANCE                                    | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
