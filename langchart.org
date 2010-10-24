@@ -86,7 +86,10 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 
 | CONTROL    | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
 |------------+---------+--------+----------+---------+------+--------+-------|
+| foreach    |         |        |          |         | yes  | yes    | yes   |
+| while      |         |        |          |         | yes  | yes    | yes   |
 | exceptions |         |        |          |         | yes  | yes    | yes   |
+| case       |         | yes    |          |         | no   | no     | yes   |
 
 
 | LIBRARY                 | Clojure | Erlang | F#/OCaml | Haskell | Java | Python | Scala |
