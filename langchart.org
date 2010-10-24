@@ -83,14 +83,17 @@ Notes: Objects are function/data containers that are first-class values.
 Notes: Scala's methods aren't themselves first-class but can always be treated as such. 
 
 
-| BINDINGS & SCOPE               | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
-|--------------------------------+---------+--------+----+---------+------+--------+-------|
-| lexical scope                  |         |        |    |         | yes  | no     | yes   |
-| single assignment variables    | no      | yes    |    | yes     | yes  | no     | yes   |
-| multiple assignment variables  | yes     | no     |    | no      | yes  | yes    | yes   |
-| closures                       |         |        |    |         | no   |        | yes   |
-| pattern matching               | yes     | yes    |    | yes     | no   | no     | yes   |
-| pattern matching in parameters |         | yes    |    | yes     | no   | no     | no    |
+| BINDINGS & SCOPE                | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
+|---------------------------------+---------+--------+----+---------+------+--------+-------|
+| lexical scope                   |         |        |    |         | yes  | no     | yes   |
+| shadowing                       |         |        |    |         | no   |        | yes   |
+| single assignment variables     | no      | yes    |    | yes     | yes  | no     | yes   |
+| multiple assignment variables   | yes     | no     |    | no      | yes  | yes    | yes   |
+| closures                        |         |        |    |         | no   |        | yes   |
+| pattern matching                | yes     | yes    |    | yes     | no   | no     | yes   |
+| pattern matching in parameters  |         | yes    |    | yes     | no   | no     | no    |
+
+Notes: Java only allows shadowing of class members.
 
 
 | CONTROL    | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
