@@ -16,7 +16,6 @@ Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 | type inference       | yes | yes     | no   | yes   |
 | path-dependent types |     |         |      | yes   |
 | existential    types |     |         | yes  | yes   |
-| abstract       types |     |         | no   | yes   |
 | self           types |     |         | no   | yes   |
 | bottom         types |     |         | no   | yes   |
 | compound       types |     |         |      | yes   |
@@ -44,17 +43,21 @@ Notes: Objects are function/data containers that are first-class values.
 | class type parameters       |    | yes  | no     | yes   |
 | multiple constructors       |    | yes  |        | yes   |
 | anonymous classes           |    | yes  |        | yes   |
+| inner classes               |    | yes  |        | yes   |
 | reference to current object |    | yes  | no     | yes   |
+| reference to parent class   |    | yes  |        | yes   |
 
 
-| INHERITANCE                                    | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
-|------------------------------------------------+---------+--------+----+---------+------+--------+-------|
-| interfaces (contracts) with abstract functions |         |        |    |         | yes  | no     | yes   |
-| interfaces (contracts) with abstract data      |         |        |    |         | no   | no     | yes   |
-| interface inheritance                          |         |        |    |         | yes  | yes    | yes   |
-| concrete inheritance                           |         |        |    |         | yes  | yes    | yes   |
-| multiple interface inheritance                 |         |        |    |         | yes  | n/a    | yes   |
-| multiple concrete inheritance                  |         |        |    |         | no   | yes    | yes   |
+| INHERITANCE                   | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
+|-------------------------------+---------+--------+----+---------+------+--------+-------|
+| abstract functions            |         |        |    |         | yes  | no     | yes   |
+| abstract data                 |         |        |    |         | no   | no     | yes   |
+| abstract types                |         |        |    |         | no   | no     | yes   |
+| concrete function inheritance |         |        |    |         | yes  | yes    | yes   |
+| concrete data inheritance     |         |        |    |         | yes  | yes    | yes   |
+| type aliases                  |         |        |    |         | no   |        | yes   |
+| multiple abstract inheritance |         |        |    |         | yes  | no     | yes   |
+| multiple concrete inheritance |         |        |    |         | no   | yes    | yes   |
 
 
 
