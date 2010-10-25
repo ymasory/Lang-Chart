@@ -99,6 +99,7 @@ Notes: Java only allows shadowing of class members.
 
 | CONTROL    | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
 |------------+---------+--------+----+---------+------+--------+-------|
+| if         | yes     | yes    |    | yes     | yes  | yes    | yes   |
 | foreach    |         |        |    |         | yes  | yes    | yes   |
 | while      |         |        |    |         | yes  | yes    | yes   |
 | exceptions | yes     |        |    |         | yes  | yes    | yes   |
@@ -140,7 +141,7 @@ Notes: Only Java's static fields are initialized lazily.
 | ranges             |         |        |    | yes     | no   | no     | no    |
 | slices             |         |        |    |         | no   | yes    | no    |
 | tuples             |         | yes    |    | yes     |      | yes    | yes   |
-| comprehensions     |         | yes    |    | yes     | no   | yes    | yes   |
+| comprehensions     | yes     | yes    |    | yes     | no   | yes    | yes   |
 | maps               | yes     | no     |    |         | no   | yes    | no    |
 
 
