@@ -125,11 +125,12 @@ Notes: Scala 2.8's package objects can only add members to a package.
 Notes: Only Java's static fields are initialized lazily.
 
 
-| LANGUAGE        | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
-|-----------------+---------+--------+----+---------+------+--------+-------|
-| preprocessor    | yes     |        |    |         | no   |        | no    |
-| reflection      |         |        |    |         | yes  |        |       |
-| metaprogramming |         |        |    |         |      |        |       |
+| LANGUAGE            | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
+|---------------------+---------+--------+----+---------+------+--------+-------|
+| preprocessor        | yes     |        |    |         | no   |        | no    |
+| reflection          |         |        |    |         | yes  |        |       |
+| metaprogramming     |         |        |    |         |      |        |       |
+| regular expressions | yes     |        |    |         | no   | no     | no    |
 
 
 | COLLECTIONS SYNTAX | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
