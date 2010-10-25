@@ -101,7 +101,7 @@ Notes: Java only allows shadowing of class members.
 |------------+---------+--------+----+---------+------+--------+-------|
 | foreach    |         |        |    |         | yes  | yes    | yes   |
 | while      |         |        |    |         | yes  | yes    | yes   |
-| exceptions |         |        |    |         | yes  | yes    | yes   |
+| exceptions | yes     |        |    |         | yes  | yes    | yes   |
 | case       |         | yes    |    |         | no   | no     | yes   |
 
 
