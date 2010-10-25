@@ -91,6 +91,7 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 | closures                       |         |        |    |         | no   |        | yes   |
 | pattern matching               | yes     | yes    |    | yes     | no   | no     | yes   |
 | pattern matching in parameters |         | yes    |    | yes     | no   | no     | no    |
+| mutable state                  | yes     |        |    | no      | yes  | yes    | yes   |
 | unmanaged mutable state        | no      |        |    | no      | yes  | yes    | yes   |
 
 Notes: Java only allows shadowing of class members.
