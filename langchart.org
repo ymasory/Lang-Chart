@@ -29,11 +29,11 @@ Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 | view bounds          |     |         |      | yes   |
 
 
-| OBJECTS                | Clojure | Erlang | F#  | Haskell | Java | Python | Scala |
-|------------------------+---------+--------+-----+---------+------+--------+-------|
-| objects                |         |        | yes |         | yes  | yes    | yes   |
-| all values are objects |         |        |     |         | no   | yes    | yes   |
-| enforced encapsulation |         |        |     |         | yes  | no     | yes   |
+| OBJECTS                  | Clojure | Erlang | F#  | Haskell | Java | Python | Scala |
+|--------------------------+---------+--------+-----+---------+------+--------+-------|
+| objects                  |         |        | yes |         | yes  | yes    | yes   |
+| all values are objects   |         |        |     |         | no   | yes    | yes   |
+| ?enforced encapsulation? |         |        |     |         | yes  | no     | yes   |
 
 Notes: Objects are function/data containers that are first-class values.
 
@@ -92,7 +92,7 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 | pattern matching               | yes     | yes    |    | yes     | no   | no     | yes   |
 | pattern matching in parameters |         | yes    |    | yes     | no   | no     | no    |
 | mutable state                  | yes     |        |    | no      | yes  | yes    | yes   |
-| unmanaged mutable state        | no      |        |    | no      | yes  | yes    | yes   |
+| ?unmanaged mutable state?      | no      |        |    | no      | yes  | yes    | yes   |
 
 Notes: Java only allows shadowing of class members.
 
