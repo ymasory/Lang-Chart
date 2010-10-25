@@ -71,7 +71,6 @@ Notes: Objects are function/data containers that are first-class values.
 | nested named functions            |         |        |    |         | no   | yes    | yes   |
 | currying                          |         |        |    | yes     | no   |        | yes   |
 | partial application of functions  |         |        |    | yes     | no   | stdlib | yes   |
-| full tail call optimization       | no      | yes    |    | yes     | no   | no     | no    |
 | overloading                       | yes     |        |    |         | yes  | no     | yes   |
 | default arguments                 |         |        |    |         | no   | yes    | yes   |
 | named arguments                   |         |        |    |         | no   | yes    | yes   |
@@ -83,15 +82,16 @@ Notes: Objects are function/data containers that are first-class values.
 Notes: Scala's methods aren't themselves first-class but can always be treated as such. 
 
 
-| BINDINGS & SCOPE                | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
-|---------------------------------+---------+--------+----+---------+------+--------+-------|
-| lexical scope                   |         |        |    |         | yes  | no     | yes   |
-| shadowing                       |         |        |    |         | no   |        | yes   |
-| single assignment variables     | no      | yes    |    | yes     | yes  | no     | yes   |
-| multiple assignment variables   | yes     | no     |    | no      | yes  | yes    | yes   |
-| closures                        |         |        |    |         | no   |        | yes   |
-| pattern matching                | yes     | yes    |    | yes     | no   | no     | yes   |
-| pattern matching in parameters  |         | yes    |    | yes     | no   | no     | no    |
+| BINDINGS & SCOPE               | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
+|--------------------------------+---------+--------+----+---------+------+--------+-------|
+| lexical scope                  |         |        |    |         | yes  | no     | yes   |
+| shadowing                      |         |        |    |         | no   |        | yes   |
+| single assignment variables    | no      | yes    |    | yes     | yes  | no     | yes   |
+| multiple assignment variables  | yes     | no     |    | no      | yes  | yes    | yes   |
+| closures                       |         |        |    |         | no   |        | yes   |
+| pattern matching               | yes     | yes    |    | yes     | no   | no     | yes   |
+| pattern matching in parameters |         | yes    |    | yes     | no   | no     | no    |
+| unmanaged mutable state        | no      |        |    | no      | yes  | yes    | yes   |
 
 Notes: Java only allows shadowing of class members.
 
@@ -142,10 +142,10 @@ Notes: Only Java's static fields are initialized lazily.
 | maps               | yes     | no     |    |         | no   | yes    | no    |
 
 
-| CONCURRENCY             | Clojure | Erlang | F#  | Haskell | Java | Python | Scala |
-|-------------------------+---------+--------+-----+---------+------+--------+-------|
-| true parallelism        | yes     | yes    | yes | yes     | yes  | no     | yes   |
-| unmanaged mutable state | no      |        |     | no      | yes  | yes    | yes   |
+| IMPLEMENTATION              | Clojure | Erlang | F#  | Haskell | Java | Python | Scala |
+|-----------------------------+---------+--------+-----+---------+------+--------+-------|
+| true parallelism            | yes     | yes    | yes | yes     | yes  | no     | yes   |
+| full tail call optimization | no      | yes    |     | yes     | no   | no     | no    |
 
 Notes: CPython's global interpreter lock prevents two threads from making progress at the same time.
 Jython and IronPython do not suffer from this problem.
