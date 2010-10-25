@@ -70,7 +70,7 @@ Notes: Objects are function/data containers that are first-class values.
 | anonymous functions               | yes     | yes    |    | yes     | no   | yes    | yes   |
 | nested named functions            |         |        |    |         | no   | yes    | yes   |
 | currying                          |         |        |    | yes     | no   |        | yes   |
-| partial application of functions  |         |        |    | yes     | no   | stdlib | yes   |
+| partial application of functions  | yes     |        |    | yes     | no   | stdlib | yes   |
 | overloading                       | yes     |        |    |         | yes  | no     | yes   |
 | default arguments                 |         |        |    |         | no   | yes    | yes   |
 | named arguments                   |         |        |    |         | no   | yes    | yes   |
