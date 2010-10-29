@@ -58,7 +58,7 @@ Notes: Objects are function/data containers that are first-class values.
 | type aliases                  |         |        |    |         | no   |        | yes   |
 | multiple abstract inheritance |         |        |    |         | yes  | no     | yes   |
 | multiple concrete inheritance |         |        |    |         | no   | yes    | yes   |
-
+| ?virtual functions?           |         |        |    |         |      |        |       |
 
 
 | FUNCTIONS                         | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
@@ -76,8 +76,9 @@ Notes: Objects are function/data containers that are first-class values.
 | named arguments                   |         |        |    |         | no   | yes    | yes   |
 | variable number arguments         |         |        |    |         | yes  |        | yes   |
 | unstructured side-effects         | yes     | yes    |    | no      | yes  | yes    | yes   |
-| generators                        |         |        |    |         |      |        |       |
-| continuations                     |         |        |    |         |      |        |       |
+| ?dispatch?                        |         |        |    |         |      |        |       |
+| ?generators?                      |         |        |    |         |      |        |       |
+| ?continuations?                   |         |        |    |         |      |        |       |
 
 Notes: Scala's methods aren't themselves first-class but can always be treated as such. 
 
