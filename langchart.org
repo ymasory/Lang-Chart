@@ -75,6 +75,7 @@ Notes: Objects are function/data containers that are first-class values.
 | default arguments                 |         |        |    |         | no   | yes    | yes   |
 | named arguments                   |         |        |    |         | no   | yes    | yes   |
 | variable number arguments         |         |        |    |         | yes  |        | yes   |
+| keyword parameter maps            |         |        |    |         | no   | yes    |       |
 | unstructured side-effects         | yes     | yes    |    | no      | yes  | yes    | yes   |
 | ?dispatch?                        |         |        |    |         |      |        |       |
 | ?generators?                      |         |        |    |         |      |        |       |
