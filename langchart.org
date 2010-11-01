@@ -133,7 +133,9 @@ Notes: Only Java's static fields are initialized lazily.
 
 | LANGUAGE            | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
 |---------------------+---------+--------+----+---------+------+--------+-------|
+| homoiconicity       | yes     | no     | no | no      | no   | no     | no    |
 | preprocessor        | yes     |        |    |         | no   |        | no    |
+| macros              | yes     |        |    |         | no   | no     | no    |
 | metaprogramming     |         |        |    |         |      |        |       |
 | regular expressions | yes     |        |    |         | no   | no     | no    |
 | reflection          |         |        |    |         | yes  |        |       |
