@@ -96,6 +96,7 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 | mutable state                  | yes     |        |    | no      | yes  | yes    | yes   |
 | ?unmanaged mutable state?      | no      |        |    | no      | yes  | yes    | yes   |
 | ?forward declarations?         |         |        |    |         |      |        |       |
+| ?globals?                      |         |        |    |         |      |        |       |
 
 Notes: Java only allows shadowing of class members.
 
