@@ -101,13 +101,15 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 Notes: Java only allows shadowing of class members.
 
 
-| CONTROL    | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
-|------------+---------+--------+----+---------+------+--------+-------|
-| if         | yes     | yes    |    | yes     | yes  | yes    | yes   |
-| foreach    |         |        |    |         | yes  | yes    | yes   |
-| while      |         |        |    |         | yes  | yes    | yes   |
-| exceptions | yes     |        |    |         | yes  | yes    | yes   |
-| case       |         | yes    |    |         | no   | no     | yes   |
+| CONTROL                 | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
+|-------------------------+---------+--------+----+---------+------+--------+-------|
+| if                      | yes     | yes    |    | yes     | yes  | yes    | yes   |
+| if uses strict booleans | no      |        |    |         | yes  | no     | yes   |
+| foreach                 |         |        |    |         | yes  | yes    | yes   |
+| while                   |         |        |    |         | yes  | yes    | yes   |
+| finally on loops        |         |        |    |         | no   | yes    | no    |
+| exceptions              | yes     |        |    |         | yes  | yes    | yes   |
+| case                    |         | yes    |    |         | no   | no     | yes   |
 
 
 | LIBRARY                 | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
@@ -153,6 +155,12 @@ Notes: Only Java's static fields are initialized lazily.
 | tuples             |         | yes    |    | yes     |      | yes    | yes   |
 | comprehensions     | yes     | yes    |    | yes     | no   | yes    | yes   |
 | maps               | yes     | no     |    |         | no   | yes    | no    |
+
+
+| BASIC TYPES                 | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
+|-----------------------------+---------+--------+----+---------+------+--------+-------|
+| integers are arbitrary-size | yes     | yes    |    | yes     | no   |        | no    |
+| strings are sequences       | yes     |        |    | yes     | no   | yes    | yes   |
 
 
 | IMPLEMENTATION              | Clojure | Erlang | F#  | Haskell | Java | Python | Scala |
