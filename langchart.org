@@ -110,6 +110,8 @@ Notes: Java only allows shadowing of class members.
 | finally on loops        |         |        |    |         | no   | yes    | no    |
 | exceptions              | yes     |        |    |         | yes  | yes    | yes   |
 | case                    |         | yes    |    |         | no   | no     | yes   |
+| break/continue          |         |        |    |         | yes  | yes    | no    |
+| return                  |         |        |    |         | yes  | yes    | yes   |
 
 
 | LIBRARY                 | Clojure | Erlang | F# | Haskell | Java | Python | Scala |
