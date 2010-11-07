@@ -173,6 +173,7 @@ Notes: Only Java's static fields are initialized lazily.
 | booleans                    | yes     |        |    | yes     | yes  | yes        | yes    | yes   |
 | integers are arbitrary-size | yes     | yes    |    | yes     | no   |            |        | no    |
 | strings are sequences       | yes     |        |    | yes     | no   |            | yes    | yes   |
+| xml literals                |         |        |    |         |      |            |        | yes   |
 
 
 | IMPLEMENTATION              | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Python | Scala |
