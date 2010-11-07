@@ -4,7 +4,6 @@
 | statically typed   | no      | no     | yes | yes     | yes  |            | no     | yes   |
 | coercion           |         |        |     | no      | yes  |            | yes    | yes   |
 | null reference     |         |        |     | no      | yes  |            | yes    | yes   |
-| strict booleans    | no      |        |     | yes     | yes  |            | no     | yes   |
 | most types reified |         |        |     | no      | yes  |            | yes    | yes   |
 | all types reified  |         |        |     | no      | no   |            | yes    | no    |
 
@@ -101,19 +100,21 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 Notes: Java only allows shadowing of class members.
 
 
-| CONTROL                 | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
-|-------------------------+---------+--------+----+---------+------+------------+--------+-------|
-| if                      | yes     | yes    |    | yes     | yes  | yes        | yes    | yes   |
-| if uses strict booleans | no      |        |    |         | yes  | no         | no     | yes   |
-| foreach                 |         |        |    |         | yes  |            | yes    | yes   |
-| do-while                |         |        |    |         | yes  | yes        |        | yes   |
-| while                   |         |        |    |         | yes  |            | yes    | yes   |
-| finally on loops        |         |        |    |         | no   |            | yes    | no    |
-| exceptions              | yes     |        |    |         | yes  |            | yes    | yes   |
-| case                    |         | yes    |    |         | no   |            | no     | yes   |
-| break/continue          |         |        |    |         | yes  |            | yes    | no    |
-| switch                  |         |        |    |         |      | yes        |        |       |
-| return                  |         |        |    |         | yes  | yes        | yes    | yes   |
+| CONTROL                                         | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
+|-------------------------------------------------+---------+--------+----+---------+------+------------+--------+-------|
+| if                                              | yes     | yes    |    | yes     | yes  | yes        | yes    | yes   |
+| if uses strict booleans                         | no      |        |    |         | yes  | no         | no     | yes   |
+| foreach                                         |         |        |    |         | yes  |            | yes    | yes   |
+| do-while                                        |         |        |    |         | yes  | yes        |        | yes   |
+| while                                           |         |        |    |         | yes  |            | yes    | yes   |
+| finally on loops                                |         |        |    |         | no   |            | yes    | no    |
+| exceptions                                      | yes     |        |    |         | yes  |            | yes    | yes   |
+| case                                            |         | yes    |    |         | no   |            | no     | yes   |
+| break/continue                                  |         |        |    |         | yes  |            | yes    | no    |
+| switch                                          |         |        |    |         |      | yes        |        |       |
+| return                                          |         |        |    |         | yes  | yes        | yes    | yes   |
+| control structures result in values             | yes     | yes    |    | yes     | no   | yes        | no     | yes   |
+| control structures result in interesting values |         |        |    | yes     | no   |            | no     | no    |
 
 
 | LIBRARY                 | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
@@ -166,6 +167,8 @@ Notes: Only Java's static fields are initialized lazily.
 |-----------------------------+---------+--------+----+---------+------+------------+--------+-------|
 | integers                    |         |        |    | yes     | yes  | no         | yes    | yes   |
 | floating point numbers      |         |        |    | yes     | yes  | yes        | yes    | yes   |
+| characters                  | yes     |        |    | yes     | yes  | no         | no     | yes   |
+| booleans                    | yes     |        |    | yes     | yes  | yes        | yes    | yes   |
 | integers are arbitrary-size | yes     | yes    |    | yes     | no   |            |        | no    |
 | strings are sequences       | yes     |        |    | yes     | no   |            | yes    | yes   |
 
