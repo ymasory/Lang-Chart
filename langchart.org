@@ -111,6 +111,7 @@ Notes: Java only allows shadowing of class members.
 | exceptions              | yes     |        |    |         | yes  |            | yes    | yes   |
 | case                    |         | yes    |    |         | no   |            | no     | yes   |
 | break/continue          |         |        |    |         | yes  |            | yes    | no    |
+| switch                  |         |        |    |         |      |            |        |       |
 | return                  |         |        |    |         | yes  |            | yes    | yes   |
 
 
