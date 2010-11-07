@@ -113,6 +113,8 @@ Notes: Java only allows shadowing of class members.
 | break/continue                                  |         |        |    |         | yes  |            | yes    | no    |
 | switch                                          |         |        |    |         |      | yes        |        |       |
 | return                                          |         |        |    |         | yes  | yes        | yes    | yes   |
+| blocks without control structures               |         |        |    |         | no   | yes        |        | yes   |
+| labeled blocks                                  |         |        |    |         | yes  | yes        |        |       |
 | control structures result in values             | yes     | yes    |    | yes     | no   | yes        | no     | yes   |
 | control structures result in interesting values |         |        |    | yes     | no   |            | no     | no    |
 
