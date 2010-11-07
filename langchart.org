@@ -103,16 +103,17 @@ Notes: Java only allows shadowing of class members.
 
 | CONTROL                 | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
 |-------------------------+---------+--------+----+---------+------+------------+--------+-------|
-| if                      | yes     | yes    |    | yes     | yes  |            | yes    | yes   |
-| if uses strict booleans | no      |        |    |         | yes  |            | no     | yes   |
+| if                      | yes     | yes    |    | yes     | yes  | yes        | yes    | yes   |
+| if uses strict booleans | no      |        |    |         | yes  | no         | no     | yes   |
 | foreach                 |         |        |    |         | yes  |            | yes    | yes   |
+| do-while                |         |        |    |         | yes  | yes        |        | yes   |
 | while                   |         |        |    |         | yes  |            | yes    | yes   |
 | finally on loops        |         |        |    |         | no   |            | yes    | no    |
 | exceptions              | yes     |        |    |         | yes  |            | yes    | yes   |
 | case                    |         | yes    |    |         | no   |            | no     | yes   |
 | break/continue          |         |        |    |         | yes  |            | yes    | no    |
-| switch                  |         |        |    |         |      |            |        |       |
-| return                  |         |        |    |         | yes  |            | yes    | yes   |
+| switch                  |         |        |    |         |      | yes        |        |       |
+| return                  |         |        |    |         | yes  | yes        | yes    | yes   |
 
 
 | LIBRARY                 | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
@@ -163,6 +164,8 @@ Notes: Only Java's static fields are initialized lazily.
 
 | BASIC TYPES                 | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
 |-----------------------------+---------+--------+----+---------+------+------------+--------+-------|
+| integers                    |         |        |    | yes     | yes  | no         | yes    | yes   |
+| floating point numbers      |         |        |    | yes     | yes  | yes        | yes    | yes   |
 | integers are arbitrary-size | yes     | yes    |    | yes     | no   |            |        | no    |
 | strings are sequences       | yes     |        |    | yes     | no   |            | yes    | yes   |
 
