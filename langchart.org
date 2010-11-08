@@ -104,6 +104,7 @@ Notes: Java only allows shadowing of class members.
 |-------------------------------------------------+---------+--------+----+---------+------+------------+--------+-------|
 | if                                              | yes     | yes    |    | yes     | yes  | yes        | yes    | yes   |
 | if uses strict booleans                         | no      |        |    |         | yes  | no         | no     | yes   |
+| for                                             |         |        |    |         | yes  | yes        | no     | no    |
 | foreach                                         |         |        |    |         | yes  |            | yes    | yes   |
 | do-while                                        |         |        |    |         | yes  | yes        |        | yes   |
 | while                                           |         |        |    |         | yes  |            | yes    | yes   |
