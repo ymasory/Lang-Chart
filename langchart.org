@@ -7,8 +7,6 @@
 | most types reified |         |        |     | no      | yes  |            | yes    | yes   |
 | all types reified  |         |        |     | no      | no   |            | yes    | no    |
 
-Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
-
 
 | STATIC TYPES         | F#  | Haskell | Java | Scala |
 |----------------------+-----+---------+------+-------|
@@ -33,8 +31,6 @@ Notes: Manifests can prevent type-erasure in Scala in only very limited cases.
 | objects                  |         |        | yes |         | yes  |            | yes    | yes   |
 | all values are objects   |         |        |     |         | no   |            | yes    | yes   |
 | ?enforced encapsulation? |         |        |     |         | yes  |            | no     | yes   |
-
-Notes: Objects are function/data containers that are first-class values.
 
 
 | CLASSES                     | F# | Java | Python | Scala |
@@ -80,8 +76,6 @@ Notes: Objects are function/data containers that are first-class values.
 | ?generators?                      |         |        |    |         |      |            |        |       |
 | ?continuations?                   |         |        |    |         |      |            |        |       |
 
-Notes: Scala's methods aren't themselves first-class but can always be treated as such. 
-
 
 | BINDINGS & SCOPE               | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
 |--------------------------------+---------+--------+----+---------+------+------------+--------+-------|
@@ -96,8 +90,8 @@ Notes: Scala's methods aren't themselves first-class but can always be treated a
 | ?unmanaged mutable state?      | no      |        |    | no      | yes  |            | yes    | yes   |
 | ?forward declarations?         |         |        |    |         |      |            |        |       |
 | ?globals?                      |         |        |    |         |      |            |        |       |
-
-Notes: Java only allows shadowing of class members.
+| ?call convention?              |         |        |    |         |      |            |        |       |
+| ?passing convention?           |         |        |    |         |      |            |        |       |
 
 
 | CONTROL                                         | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
@@ -127,8 +121,6 @@ Notes: Java only allows shadowing of class members.
 | implicit parameters     |         |        |    |         | no   |            |        | yes   |
 | first-class modules     |         |        |    |         |      |            | yes    |       |
 
-Notes: Scala 2.8's package objects can only add members to a package.
-
 
 | EVALUATION                    | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
 |-------------------------------+---------+--------+----+---------+------+------------+--------+-------|
@@ -139,8 +131,6 @@ Notes: Scala 2.8's package objects can only add members to a package.
 | eager parameter evaluation    |         |        |    |         | yes  |            | yes    | yes   |
 | uniform access principle      |         |        |    |         | no   |            | no     | yes   |
 | atoms                         | yes     | yes    |    |         | no   |            | no     | no    |
-
-Notes: Only Java's static fields are initialized lazily.
 
 
 | PROGRAM TEXT           | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
@@ -181,7 +171,3 @@ Notes: Only Java's static fields are initialized lazily.
 |-----------------------------+---------+--------+-----+---------+------+------------+--------+-------|
 | true parallelism            | yes     | yes    | yes | yes     | yes  |            | no     | yes   |
 | full tail call optimization | no      | yes    |     | yes     | no   |            | no     | no    |
-
-Notes: CPython's global interpreter lock prevents two threads from making progress at the same time.
-Jython and IronPython do not suffer from this problem.
-
