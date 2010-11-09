@@ -92,6 +92,8 @@
 | ?globals?                      |         |        |    |         |      |            |        |       |
 | ?call convention?              |         |        |    |         |      |            |        |       |
 | ?passing convention?           |         |        |    |         |      |            |        |       |
+| ?global variables?             |         |        |    |         |      |            |        |       |
+| ?module global variables?      |         |        |    |         |      |            |        |       |
 
 
 | CONTROL                                         | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
