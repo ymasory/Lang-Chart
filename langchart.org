@@ -99,7 +99,8 @@
 
 | CONTROL                                         | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
 |-------------------------------------------------+---------+--------+----+---------+------+------------+--------+-------|
-| if                                              | yes     | yes    |    | yes     | yes  | yes        | yes    | yes   |
+| conditional resulting in value                  | yes     | yes    |    | yes     | yes  | yes        | no     | yes   |
+| conditional branch                              | no      |        |    | no      | yes  | yes        | yes    | no    |
 | if uses strict booleans                         | no      |        |    |         | yes  | no         | no     | yes   |
 | for                                             |         |        |    |         | yes  | yes        | no     | no    |
 | foreach                                         |         |        |    |         | yes  |            | yes    | yes   |
@@ -115,6 +116,7 @@
 | labeled blocks                                  |         |        |    |         | yes  | yes        |        |       |
 | control structures result in values             | yes     | yes    |    | yes     | no   | yes        | no     | yes   |
 | control structures result in interesting values |         |        |    | yes     | no   |            | no     | no    |
+| procedures                                      |         |        |    |         | yes  |            | yes    | no    |
 
 
 | LIBRARY                 | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
