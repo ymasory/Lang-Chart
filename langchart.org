@@ -1,7 +1,7 @@
 | TYPE DISCIPLINE    | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Python | Scala |
 |--------------------+---------+--------+-----+---------+------+------------+--------+-------|
 | strongly typed     | yes     | yes    | yes | yes     | yes  |            | yes    | yes   |
-| statically typed   | no      | no     | yes | yes     | yes  |            | no     | yes   |
+| statically typed   | no      | no     | yes | yes     | yes  | no         | no     | yes   |
 | coercion           |         |        |     | no      | yes  |            | yes    | yes   |
 | null reference     |         |        |     | no      | yes  |            | yes    | yes   |
 | most types reified |         |        |     | no      | yes  |            | yes    | yes   |
@@ -28,9 +28,9 @@
 
 | OBJECTS                  | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Python | Scala |
 |--------------------------+---------+--------+-----+---------+------+------------+--------+-------|
-| objects                  |         |        | yes |         | yes  |            | yes    | yes   |
+| objects                  |         |        | yes |         | yes  | yes        | yes    | yes   |
 | all values are objects   |         |        |     |         | no   |            | yes    | yes   |
-| ?enforced encapsulation? |         |        |     |         | yes  |            | no     | yes   |
+| ?enforced encapsulation? |         |        |     |         | yes  | no         | no     | yes   |
 
 
 | CLASSES                     | F# | Java | Python | Scala |
@@ -103,13 +103,14 @@
 | conditional branch                              | no      |        |    | no      | yes  | yes        | yes    | no    |
 | if uses strict booleans                         | no      |        |    |         | yes  | no         | no     | yes   |
 | for                                             |         |        |    |         | yes  | yes        | no     | no    |
-| foreach                                         |         |        |    |         | yes  |            | yes    | yes   |
+| foreach                                         |         |        |    |         | yes  | yes        | yes    | yes   |
 | do-while                                        |         |        |    |         | yes  | yes        |        | yes   |
-| while                                           |         |        |    |         | yes  |            | yes    | yes   |
-| finally on loops                                |         |        |    |         | no   |            | yes    | no    |
+| while                                           |         |        |    |         | yes  | yes        | yes    | yes   |
+| finally on loops                                |         |        |    |         | no   | yes        | yes    | no    |
+| finally in exception handling                   |         |        |    |         |      |            |        |       |
 | exceptions                                      | yes     |        |    |         | yes  |            | yes    | yes   |
 | case                                            |         | yes    |    |         | no   |            | no     | yes   |
-| break/continue                                  |         |        |    |         | yes  |            | yes    | no    |
+| break/continue                                  |         |        |    |         | yes  | yes        | yes    | no    |
 | switch                                          |         |        |    |         |      | yes        |        |       |
 | return                                          |         |        |    |         | yes  | yes        | yes    | yes   |
 | blocks without control structures               |         |        |    |         | no   | yes        |        | yes   |
@@ -125,6 +126,10 @@
 | implicit functions      |         |        |    |         | no   |            |        | yes   |
 | implicit parameters     |         |        |    |         | no   |            |        | yes   |
 | first-class modules     |         |        |    |         |      |            | yes    |       |
+| export required         |         |        |    |         |      |            |        |       |
+| import required         |         |        |    |         |      |            |        |       |
+| catch-all import        |         |        |    |         |      |            |        |       |
+| hiding from catch-all   |         |        |    |         |      |            |        |       |
 
 
 | EVALUATION                    | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
