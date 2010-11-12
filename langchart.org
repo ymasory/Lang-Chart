@@ -13,6 +13,7 @@
 | type inference       | yes | yes     | no   | yes   |
 | manifest types       |     |         |      |       |
 | path-dependent types |     |         |      | yes   |
+| dependent types      |     |         |      |       |
 | existential    types |     |         | yes  | yes   |
 | self           types |     |         | no   | yes   |
 | bottom         types |     |         | no   | yes   |
