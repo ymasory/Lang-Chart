@@ -102,6 +102,7 @@
 |-------------------------------------------------+---------+--------+----+---------+------+------------+--------+-------|
 | conditional resulting in value                  | yes     | yes    |    | yes     | yes  | yes        | no     | yes   |
 | conditional branch                              | no      |        |    | no      | yes  | yes        | yes    | no    |
+| elif                                            |         |        |    |         |      |            |        |       |
 | if uses strict booleans                         | no      |        |    |         | yes  | no         | no     | yes   |
 | for                                             |         |        |    |         | yes  | yes        | no     | no    |
 | foreach                                         |         |        |    |         | yes  | yes        | yes    | yes   |
