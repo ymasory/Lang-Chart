@@ -134,6 +134,7 @@
 | import required         |         |        |    |         |      |            |        |       |
 | catch-all import        |         |        |    |         |      |            |        |       |
 | hiding from catch-all   |         |        |    |         |      |            |        |       |
+| import hiding           |         |        |    |         |      |            |        |       |
 
 
 | EVALUATION                    | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
