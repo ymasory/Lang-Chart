@@ -11,6 +11,7 @@
 | STATIC TYPES         | F#  | Haskell | Java | Scala |
 |----------------------+-----+---------+------+-------|
 | type inference       | yes | yes     | no   | yes   |
+| manifest types       |     |         |      |       |
 | path-dependent types |     |         |      | yes   |
 | existential    types |     |         | yes  | yes   |
 | self           types |     |         | no   | yes   |
