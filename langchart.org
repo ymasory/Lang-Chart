@@ -78,6 +78,7 @@
 | ?dispatch?                        |         |        |    |         |      |            |        |       |
 | ?generators?                      |         |        |    |         |      |            |        |       |
 | ?continuations?                   |         |        |    |         |      |            |        |       |
+| ?function composition?            |         |        |    |         |      |            |        |       |
 
 
 | BINDINGS & SCOPE               | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
