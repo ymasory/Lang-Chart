@@ -91,6 +91,7 @@
 | pattern matching               | yes     | yes    |    | yes     | no   |            | no     | yes   |
 | pattern matching in parameters |         | yes    |    | yes     | no   |            | no     | no    |
 | mutable state                  | yes     |        |    | no      | yes  |            | yes    | yes   |
+| delete binding                 |         |        |    |         |      |            |        |       |
 | ?unmanaged mutable state?      | no      |        |    | no      | yes  |            | yes    | yes   |
 | ?forward declarations?         |         |        |    |         |      |            |        |       |
 | ?globals?                      |         |        |    |         |      |            |        |       |
