@@ -10,6 +10,7 @@
 
 | STATIC TYPES         | F#  | Haskell | Java | Scala |
 |----------------------+-----+---------+------+-------|
+| universal type       |     |         |      |       |
 | type inference       | yes | yes     | no   | yes   |
 | manifest types       |     |         |      |       |
 | path-dependent types |     |         |      | yes   |
