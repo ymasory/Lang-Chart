@@ -150,15 +150,15 @@
 | atoms                         | yes     | yes    |    |         | no   |            | no     | no    |
 
 
-| PROGRAM TEXT           | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
-|------------------------+---------+--------+----+---------+------+------------+--------+-------|
-| whitespace significant |         |        |    | yes     | no   | no         | yes    | no    |
-| homoiconicity          | yes     | no     | no | no      | no   |            | no     | no    |
-| preprocessor           | yes     |        |    |         | no   |            |        | no    |
-| macros                 | yes     |        |    |         | no   |            | no     | no    |
-| metaprogramming        |         |        |    |         |      |            |        |       |
-| regular expressions    | yes     |        |    |         | no   |            | no     | no    |
-| reflection             |         |        |    |         | yes  |            |        |       |
+| PROGRAM TEXT        | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
+|---------------------+---------+--------+----+---------+------+------------+--------+-------|
+| free-form           |         |        |    | no      | yes  | yes        | no     | yes   |
+| homoiconicity       | yes     | no     | no | no      | no   |            | no     | no    |
+| preprocessor        | yes     |        |    |         | no   |            |        | no    |
+| macros              | yes     |        |    |         | no   |            | no     | no    |
+| metaprogramming     |         |        |    |         |      |            |        |       |
+| regular expressions | yes     |        |    |         | no   |            | no     | no    |
+| reflection          |         |        |    |         | yes  |            |        |       |
 
 
 | COLLECTIONS SYNTAX | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
