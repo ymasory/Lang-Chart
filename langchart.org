@@ -86,6 +86,7 @@
 |--------------------------------+---------+--------+-----+---------+------+------------+--------+-------|
 | lexical scope                  |         |        | yes |         | yes  |            | no     | yes   |
 | shadowing                      |         |        | yes |         | no   |            |        | yes   |
+| shadowing in-block             |         |        | yes |         |      |            |        |       |
 | single assignment variables    | no      | yes    | yes | yes     | yes  |            | no     | yes   |
 | multiple assignment variables  | yes     | no     |     | no      | yes  |            | yes    | yes   |
 | closures                       |         |        |     |         | no   |            |        | yes   |
