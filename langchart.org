@@ -2,7 +2,7 @@
 |--------------------+---------+--------+-----+---------+------+------------+--------+-------|
 | strongly typed     | yes     | yes    | yes | yes     | yes  |            | yes    | yes   |
 | statically typed   | no      | no     | yes | yes     | yes  | no         | no     | yes   |
-| coercion           |         |        |     | no      | yes  |            | yes    | yes   |
+| coercion           |         |        | no  | no      | yes  |            | yes    | yes   |
 | null reference     |         |        |     | no      | yes  |            | yes    | yes   |
 | most types reified |         |        |     | no      | yes  |            | yes    | yes   |
 | all types reified  |         |        |     | no      | no   |            | yes    | no    |
