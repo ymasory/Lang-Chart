@@ -168,7 +168,7 @@
 | arrays             |         |        |     |         | yes  |            |        |       |
 | cons               |         | yes    |     |         | no   |            | no     |       |
 | indexes            |         |        |     |         | no   |            | yes    | no    |
-| ranges             |         |        |     | yes     | no   |            | no     | no    |
+| ranges             |         |        | yes | yes     | no   |            | no     | no    |
 | slices             |         |        |     |         | no   |            | yes    | no    |
 | tuples             |         | yes    | yes | yes     |      |            | yes    | yes   |
 | comprehensions     | yes     | yes    |     | yes     | no   |            | yes    | yes   |
