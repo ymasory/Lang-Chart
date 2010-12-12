@@ -90,7 +90,7 @@
 | single assignment variables    | no      | yes    | yes | yes     | yes  |            | no     | yes   |
 | multiple assignment variables  | yes     | no     |     | no      | yes  |            | yes    | yes   |
 | closures                       |         |        |     |         | no   |            |        | yes   |
-| pattern matching               | yes     | yes    |     | yes     | no   |            | no     | yes   |
+| pattern matching               | yes     | yes    | yes | yes     | no   |            | no     | yes   |
 | pattern matching in parameters |         | yes    |     | yes     | no   |            | no     | no    |
 | mutable state                  | yes     |        |     | no      | yes  |            | yes    | yes   |
 | delete binding                 |         |        |     |         |      |            |        |       |
@@ -162,17 +162,17 @@
 | reflection          |         |        |    |         | yes  |            |        |       |
 
 
-| COLLECTIONS SYNTAX | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
-|--------------------+---------+--------+----+---------+------+------------+--------+-------|
-| lists              | yes     | yes    |    | yes     | no   |            | yes    | no    |
-| arrays             |         |        |    |         |      |            |        |       |
-| cons               |         | yes    |    |         | no   |            | no     |       |
-| indexes            |         |        |    |         | no   |            | yes    | no    |
-| ranges             |         |        |    | yes     | no   |            | no     | no    |
-| slices             |         |        |    |         | no   |            | yes    | no    |
-| tuples             |         | yes    |    | yes     |      |            | yes    | yes   |
-| comprehensions     | yes     | yes    |    | yes     | no   |            | yes    | yes   |
-| maps               | yes     | no     |    |         | no   |            | yes    | no    |
+| COLLECTIONS SYNTAX | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Python | Scala |
+|--------------------+---------+--------+-----+---------+------+------------+--------+-------|
+| lists              | yes     | yes    | yes | yes     | no   |            | yes    | no    |
+| arrays             |         |        |     |         | yes  |            |        |       |
+| cons               |         | yes    |     |         | no   |            | no     |       |
+| indexes            |         |        |     |         | no   |            | yes    | no    |
+| ranges             |         |        |     | yes     | no   |            | no     | no    |
+| slices             |         |        |     |         | no   |            | yes    | no    |
+| tuples             |         | yes    | yes | yes     |      |            | yes    | yes   |
+| comprehensions     | yes     | yes    |     | yes     | no   |            | yes    | yes   |
+| maps               | yes     | no     |     |         | no   |            | yes    | no    |
 
 
 | BASIC TYPES                 | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
