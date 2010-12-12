@@ -118,7 +118,7 @@
 | case                                            |         | yes    |    |         | no   |            | no     | yes   |
 | break/continue                                  |         |        |    |         | yes  | yes        | yes    | no    |
 | switch                                          |         |        |    |         |      | yes        |        |       |
-| return                                          |         |        |    |         | yes  | yes        | yes    | yes   |
+| return                                          |         |        | no |         | yes  | yes        | yes    | yes   |
 | blocks without control structures               |         |        |    |         | no   | yes        |        | yes   |
 | labeled blocks                                  |         |        |    |         | yes  | yes        |        |       |
 | control structures result in values             | yes     | yes    |    | yes     | no   | yes        | no     | yes   |
