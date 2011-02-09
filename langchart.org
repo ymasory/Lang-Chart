@@ -103,28 +103,29 @@
 | ?module global variables?      |         |        |     |         |      |            |      |        |      |       |
 
 
-| CONTROL                                         | Clojure | Erlang | F# | Haskell | Java | JavaScript | Python | Scala |
-|-------------------------------------------------+---------+--------+----+---------+------+------------+--------+-------|
-| conditional resulting in value                  | yes     | yes    |    | yes     | yes  | yes        | no     | yes   |
-| conditional branch                              | no      |        |    | no      | yes  | yes        | yes    | no    |
-| elif                                            |         |        |    |         |      |            |        |       |
-| if uses strict booleans                         | no      |        |    |         | yes  | no         | no     | yes   |
-| for                                             |         |        |    |         | yes  | yes        | no     | no    |
-| foreach                                         |         |        |    |         | yes  | yes        | yes    | yes   |
-| do-while                                        |         |        |    |         | yes  | yes        |        | yes   |
-| while                                           |         |        |    |         | yes  | yes        | yes    | yes   |
-| finally on loops                                |         |        |    |         | no   | yes        | yes    | no    |
-| finally in exception handling                   |         |        |    |         |      |            |        |       |
-| exceptions                                      | yes     |        |    |         | yes  |            | yes    | yes   |
-| case                                            |         | yes    |    |         | no   |            | no     | yes   |
-| break/continue                                  |         |        |    |         | yes  | yes        | yes    | no    |
-| switch                                          |         |        |    |         |      | yes        |        |       |
-| return                                          |         |        | no |         | yes  | yes        | yes    | yes   |
-| blocks without control structures               |         |        |    |         | no   | yes        |        | yes   |
-| labeled blocks                                  |         |        |    |         | yes  | yes        |        |       |
-| control structures result in values             | yes     | yes    |    | yes     | no   | yes        | no     | yes   |
-| control structures result in interesting values |         |        |    | yes     | no   |            | no     | no    |
-| procedures                                      |         |        |    |         | yes  |            | yes    | no    |
+| CONTROL                                         | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|-------------------------------------------------+---------+--------+----+---------+------+------------+------+--------+------+-------|
+| conditional resulting in value                  | yes     | yes    |    | yes     | yes  | yes        |      | no     |      | yes   |
+| conditional branch                              | no      |        |    | no      | yes  | yes        |      | yes    |      | no    |
+| elif                                            |         |        |    |         |      |            |      |        |      |       |
+| if uses strict booleans                         | no      |        |    |         | yes  | no         |      | no     |      | yes   |
+| for                                             |         |        |    |         | yes  | yes        |      | no     |      | no    |
+| foreach                                         |         |        |    |         | yes  | yes        |      | yes    |      | yes   |
+| do-while                                        |         |        |    |         | yes  | yes        |      |        |      | yes   |
+| while                                           |         |        |    |         | yes  | yes        |      | yes    |      | yes   |
+| finally on loops                                |         |        |    |         | no   | yes        |      | yes    |      | no    |
+| finally in exception handling                   |         |        |    |         |      |            |      |        |      |       |
+| exceptions                                      | yes     |        |    |         | yes  |            |      | yes    |      | yes   |
+| case                                            |         | yes    |    |         | no   |            |      | no     |      | yes   |
+| break/continue                                  |         |        |    |         | yes  | yes        |      | yes    |      | no    |
+| switch                                          |         |        |    |         |      | yes        |      |        |      |       |
+| return                                          |         |        | no |         | yes  | yes        |      | yes    |      | yes   |
+| blocks without control structures               |         |        |    |         | no   | yes        |      |        |      | yes   |
+| labeled blocks                                  |         |        |    |         | yes  | yes        |      |        |      |       |
+| control structures result in values             | yes     | yes    |    | yes     | no   | yes        |      | no     |      | yes   |
+| control structures result in interesting values |         |        |    | yes     | no   |            |      | no     |      | no    |
+| procedures                                      |         |        |    |         | yes  |            |      | yes    |      | no    |
+| blocks                                          | yes     |        |    |         | yes  | yes        | yes  | yes    | yes  | yes   |
 
 
 | LIBRARY                 | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
