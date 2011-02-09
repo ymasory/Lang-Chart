@@ -29,11 +29,12 @@
 | view bounds          |     |         |      | yes   |
 
 
-| OBJECTS                  | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|--------------------------+---------+--------+-----+---------+------+------------+------+--------+------+-------|
-| objects                  |         |        | yes |         | yes  | yes        |      | yes    |      | yes   |
-| all values are objects   |         |        |     |         | no   |            |      | yes    |      | yes   |
-| ?enforced encapsulation? |         |        |     |         | yes  | no         |      | no     |      | yes   |
+| OBJECTS                    | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|----------------------------+---------+--------+-----+---------+------+------------+------+--------+------+-------|
+| objects                    |         |        | yes |         | yes  | yes        |      | yes    |      | yes   |
+| all values are objects     |         |        |     |         | no   |            |      | yes    |      | yes   |
+| all operations are methods |         |        |     |         | no   | no         |      | no     | yes  | yes   |
+| ?enforced encapsulation?   |         |        |     |         | yes  | no         |      | no     |      | yes   |
 
 
 | CLASSES                     | F# | Java | Python | Ruby | Scala |
