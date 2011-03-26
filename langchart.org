@@ -1,42 +1,42 @@
-| TYPE DISCIPLINE    | bash | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|--------------------+------+---------+--------+-----+---------+------+------------+------+--------+------+-------|
-| typed              | no   | yes     | yes    | yes | yes     | yes  | yes        | yes  | yes    | yes  | yes   |
-| strongly typed     | no   | yes     | yes    | yes | yes     | yes  |            | no   | yes    |      | yes   |
-| statically typed   | no   | no      | no     | yes | yes     | yes  | no         | no   | no     |      | yes   |
-| coercion           | no   |         |        | no  | no      | yes  |            | yes  | yes    |      | yes   |
-| null reference     | no   |         |        |     | no      | yes  |            |      | yes    |      | yes   |
-| most types reified | no   |         |        |     | no      | yes  |            |      | yes    |      | yes   |
-| all types reified  | no   |         |        |     | no      | no   |            |      | yes    |      | no    |
+| TYPE DISCIPLINE    | bash | Clojure | coq | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|--------------------+------+---------+-----+--------+-----+---------+------+------------+------+--------+------+-------|
+| typed              | no   | yes     | yes | yes    | yes | yes     | yes  | yes        | yes  | yes    | yes  | yes   |
+| strongly typed     | no   | yes     | yes | yes    | yes | yes     | yes  |            | no   | yes    |      | yes   |
+| statically typed   | no   | no      | yes | no     | yes | yes     | yes  | no         | no   | no     |      | yes   |
+| coercion           | no   |         | no  |        | no  | no      | yes  |            | yes  | yes    |      | yes   |
+| most types reified | no   |         |     |        |     | no      | yes  |            |      | yes    |      | yes   |
+| all types reified  | no   |         |     |        |     | no      | no   |            |      | yes    |      | no    |
 
 
-| STATIC TYPES         | F#  | Haskell | Java | Scala |
-|----------------------+-----+---------+------+-------|
-| universal type       |     |         |      |       |
-| type inference       | yes | yes     | no   | yes   |
-| manifest types       |     |         |      |       |
-| path-dependent types |     |         |      | yes   |
-| dependent types      |     |         |      |       |
-| existential    types |     |         | yes  | yes   |
-| self           types |     |         | no   | yes   |
-| bottom         types |     |         | no   | yes   |
-| compound       types |     |         |      | yes   |
-| higher kinded  types |     |         | no   | yes   |
-| structural     types |     |         | no   | yes   |
-| sum            types |     |         |      |       |
-| product        types |     |         |      |       |
-| recursive      types |     |         |      |       |
-| type bounds          |     |         | yes  | yes   |
-| views                |     |         |      | yes   |
-| view bounds          |     |         |      | yes   |
+| STATIC TYPES         | coq | F#  | Haskell | Java | Scala |
+|----------------------+-----+-----+---------+------+-------|
+| universal type       |     |     |         |      |       |
+| null reference       |     |     | no      | yes  | yes   |
+| type inference       |     | yes | yes     | no   | yes   |
+| manifest types       |     |     |         |      |       |
+| path-dependent types |     |     |         |      | yes   |
+| dependent types      |     |     |         |      |       |
+| existential    types |     |     |         | yes  | yes   |
+| self           types |     |     |         | no   | yes   |
+| bottom         types |     |     |         | no   | yes   |
+| compound       types |     |     |         |      | yes   |
+| higher kinded  types |     |     |         | no   | yes   |
+| structural     types |     |     |         | no   | yes   |
+| sum            types |     |     |         |      |       |
+| product        types |     |     |         |      |       |
+| recursive      types |     |     |         |      |       |
+| type bounds          |     |     |         | yes  | yes   |
+| views                |     |     |         |      | yes   |
+| view bounds          |     |     |         |      | yes   |
 
 
-| OBJECTS                    | bash | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|----------------------------+------+---------+--------+-----+---------+------+------------+------+--------+------+-------|
-| objects                    | no   |         |        | yes |         | yes  | yes        |      | yes    |      | yes   |
-| all values are objects     | no   |         |        |     |         | no   |            |      | yes    |      | yes   |
-| all code is in objects     | no   |         |        |     |         | yes  |            |      |        |      |       |
-| all operations are methods | no   |         |        |     |         | no   | no         |      | no     | yes  | yes   |
-| ?enforced encapsulation?   | no   |         |        |     |         | yes  | no         |      | no     |      | yes   |
+| OBJECTS                    | bash | coq | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|----------------------------+------+-----+---------+--------+-----+---------+------+------------+------+--------+------+-------|
+| objects                    | no   |     |         |        | yes |         | yes  | yes        |      | yes    |      | yes   |
+| all values are objects     | no   |     |         |        |     |         | no   |            |      | yes    |      | yes   |
+| all code is in objects     | no   |     |         |        |     |         | yes  |            |      |        |      |       |
+| all operations are methods | no   |     |         |        |     |         | no   | no         |      | no     | yes  | yes   |
+| ?enforced encapsulation?   | no   |     |         |        |     |         | yes  | no         |      | no     |      | yes   |
 
 
 | CLASSES                     | F# | Java | Python | Ruby | Scala |
@@ -49,155 +49,162 @@
 | reference to parent class   |    | yes  |        |      | yes   |
 
 
-| INHERITANCE                   | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|-------------------------------+---------+--------+----+---------+------+------------+------+--------+------+-------|
-| abstract functions            |         |        |    |         | yes  |            |      | no     |      | yes   |
-| abstract data                 |         |        |    |         | no   |            |      | no     |      | yes   |
-| abstract types                |         |        |    |         | no   |            |      | no     |      | yes   |
-| concrete function inheritance |         |        |    |         | yes  |            |      | yes    |      | yes   |
-| concrete data inheritance     |         |        |    |         | yes  |            |      | yes    |      | yes   |
-| type aliases                  |         |        |    |         | no   |            |      |        |      | yes   |
-| multiple abstract inheritance |         |        |    |         | yes  |            |      | no     |      | yes   |
-| multiple concrete inheritance |         |        |    |         | no   |            |      | yes    |      | yes   |
-| ?virtual functions?           |         |        |    |         |      |            |      |        |      |       |
+| INHERITANCE                   | Clojure | coq | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|-------------------------------+---------+-----+--------+----+---------+------+------------+------+--------+------+-------|
+| abstract functions            |         |     |        |    |         | yes  |            |      | no     |      | yes   |
+| abstract data                 |         |     |        |    |         | no   |            |      | no     |      | yes   |
+| abstract types                |         |     |        |    |         | no   |            |      | no     |      | yes   |
+| concrete function inheritance |         |     |        |    |         | yes  |            |      | yes    |      | yes   |
+| concrete data inheritance     |         |     |        |    |         | yes  |            |      | yes    |      | yes   |
+| type aliases                  |         |     |        |    |         | no   |            |      |        |      | yes   |
+| multiple abstract inheritance |         |     |        |    |         | yes  |            |      | no     |      | yes   |
+| multiple concrete inheritance |         |     |        |    |         | no   |            |      | yes    |      | yes   |
+| ?virtual functions?           |         |     |        |    |         |      |            |      |        |      |       |
 
 
-| FUNCTIONS                         | bash | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|-----------------------------------+------+---------+--------+----+---------+------+------------+------+--------+------+-------|
-| function type parameters          | no   |         |        |    |         | yes  |            |      | no     |      | yes   |
-| operators evaluate like functions |      |         | no     |    |         | no   |            |      |        |      | yes   |
-| operator overloading              |      |         |        |    | yes     | no   |            |      | yes    |      | yes   |
-| first-class functions             |      | yes     | yes    |    | yes     | no   |            |      | yes    |      | yes   |
-| anonymous functions               |      | yes     | yes    |    | yes     | no   |            |      | yes    |      | yes   |
-| nested named functions            |      |         |        |    |         | no   |            |      | yes    |      | yes   |
-| currying                          |      |         |        |    | yes     | no   |            |      |        |      | yes   |
-| partial application of functions  |      | yes     |        |    | yes     | no   |            |      | stdlib |      | yes   |
-| overloading                       |      | yes     |        |    |         | yes  |            |      | no     |      | yes   |
-| default arguments                 |      |         |        |    |         | no   |            |      | yes    |      | yes   |
-| named arguments                   |      |         |        |    |         | no   |            |      | yes    |      | yes   |
-| variable number arguments         |      |         |        |    |         | yes  |            |      |        |      | yes   |
-| keyword parameter maps            |      |         |        |    |         | no   |            |      | yes    |      |       |
-| unstructured side-effects         |      | yes     | yes    |    | no      | yes  |            |      | yes    |      | yes   |
-| ?methods?                         |      |         |        |    |         |      |            |      |        |      |       |
-| ?dispatch?                        |      |         |        |    |         |      |            |      |        |      |       |
-| ?generators?                      |      |         |        |    |         |      |            |      |        |      |       |
-| ?continuations?                   |      |         |        |    |         |      |            |      |        |      |       |
-| ?function composition?            |      |         |        |    |         |      |            |      |        |      |       |
+| FUNCTIONS                         | bash | Clojure | coq | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|-----------------------------------+------+---------+-----+--------+----+---------+------+------------+------+--------+------+-------|
+| function type parameters          | no   |         | yes |        |    |         | yes  |            |      | no     |      | yes   |
+| operators evaluate like functions |      |         |     | no     |    |         | no   |            |      |        |      | yes   |
+| operator overloading              |      |         |     |        |    | yes     | no   |            |      | yes    |      | yes   |
+| first-class functions             |      | yes     |     | yes    |    | yes     | no   |            |      | yes    |      | yes   |
+| anonymous functions               |      | yes     |     | yes    |    | yes     | no   |            |      | yes    |      | yes   |
+| nested named functions            |      |         |     |        |    |         | no   |            |      | yes    |      | yes   |
+| currying                          |      |         |     |        |    | yes     | no   |            |      |        |      | yes   |
+| partial application of functions  |      | yes     |     |        |    | yes     | no   |            |      | stdlib |      | yes   |
+| overloading                       |      | yes     |     |        |    |         | yes  |            |      | no     |      | yes   |
+| default arguments                 |      |         |     |        |    |         | no   |            |      | yes    |      | yes   |
+| named arguments                   |      |         |     |        |    |         | no   |            |      | yes    |      | yes   |
+| variable number arguments         |      |         |     |        |    |         | yes  |            |      |        |      | yes   |
+| keyword parameter maps            |      |         |     |        |    |         | no   |            |      | yes    |      |       |
+| unstructured side-effects         |      | yes     |     | yes    |    | no      | yes  |            |      | yes    |      | yes   |
+| ?methods?                         |      |         |     |        |    |         |      |            |      |        |      |       |
+| ?dispatch?                        |      |         |     |        |    |         |      |            |      |        |      |       |
+| ?generators?                      |      |         |     |        |    |         |      |            |      |        |      |       |
+| ?continuations?                   |      |         |     |        |    |         |      |            |      |        |      |       |
+| ?function composition?            |      |         |     |        |    |         |      |            |      |        |      |       |
 
 
-| BINDINGS & SCOPE               | bash | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|--------------------------------+------+---------+--------+-----+---------+------+------------+------+--------+------+-------|
-| lexical scope                  |      |         |        | yes |         | yes  |            |      | no     |      | yes   |
-| shadowing                      |      |         |        | yes |         | no   |            |      |        |      | yes   |
-| shadowing in-block             |      |         |        | yes |         |      |            |      |        |      |       |
-| single assignment variables    | no   | no      | yes    | yes | yes     | yes  |            |      | no     |      | yes   |
-| multiple assignment variables  |      | yes     | no     |     | no      | yes  |            |      | yes    |      | yes   |
-| closures                       |      |         |        |     |         | no   |            |      |        |      | yes   |
-| pattern matching               | no   | yes     | yes    | yes | yes     | no   |            |      | no     |      | yes   |
-| pattern matching in parameters | no   |         | yes    |     | yes     | no   |            |      | no     |      | no    |
-| mutable state                  | yes  | yes     |        |     | no      | yes  |            |      | yes    |      | yes   |
-| delete binding                 |      |         |        |     |         |      |            |      |        |      |       |
-| ?unmanaged mutable state?      |      | no      |        |     | no      | yes  |            |      | yes    |      | yes   |
-| ?forward declarations?         |      |         |        |     |         |      |            |      |        |      |       |
-| ?globals?                      |      |         |        |     |         |      |            |      |        |      |       |
-| ?call convention?              |      |         |        |     |         |      |            |      |        |      |       |
-| ?passing convention?           |      |         |        |     |         |      |            |      |        |      |       |
-| ?global variables?             |      |         |        |     |         |      |            |      |        |      |       |
-| ?module global variables?      |      |         |        |     |         |      |            |      |        |      |       |
+| BINDINGS & SCOPE               | bash | Clojure | coq | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|--------------------------------+------+---------+-----+--------+-----+---------+------+------------+------+--------+------+-------|
+| lexical scope                  |      |         |     |        | yes |         | yes  |            |      | no     |      | yes   |
+| shadowing                      |      |         |     |        | yes |         | no   |            |      |        |      | yes   |
+| shadowing in-block             |      |         |     |        | yes |         |      |            |      |        |      |       |
+| single assignment variables    | no   | no      |     | yes    | yes | yes     | yes  |            |      | no     |      | yes   |
+| multiple assignment variables  |      | yes     |     | no     |     | no      | yes  |            |      | yes    |      | yes   |
+| closures                       |      |         |     |        |     |         | no   |            |      |        |      | yes   |
+| pattern matching               | no   | yes     |     | yes    | yes | yes     | no   |            |      | no     |      | yes   |
+| pattern matching in parameters | no   |         |     | yes    |     | yes     | no   |            |      | no     |      | no    |
+| mutable state                  | yes  | yes     |     |        |     | no      | yes  |            |      | yes    |      | yes   |
+| delete binding                 |      |         |     |        |     |         |      |            |      |        |      |       |
+| ?unmanaged mutable state?      |      | no      |     |        |     | no      | yes  |            |      | yes    |      | yes   |
+| ?forward declarations?         |      |         |     |        |     |         |      |            |      |        |      |       |
+| ?globals?                      |      |         |     |        |     |         |      |            |      |        |      |       |
+| ?call convention?              |      |         |     |        |     |         |      |            |      |        |      |       |
+| ?passing convention?           |      |         |     |        |     |         |      |            |      |        |      |       |
+| ?global variables?             |      |         |     |        |     |         |      |            |      |        |      |       |
+| ?module global variables?      |      |         |     |        |     |         |      |            |      |        |      |       |
 
 
-| CONTROL                                         | bash | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|-------------------------------------------------+------+---------+--------+----+---------+------+------------+------+--------+------+-------|
-| conditional resulting in value                  |      | yes     | yes    |    | yes     | yes  | yes        |      | no     |      | yes   |
-| conditional branch                              |      | no      |        |    | no      | yes  | yes        |      | yes    |      | no    |
-| elif                                            | no   |         |        |    |         |      |            |      |        |      |       |
-| if uses strict booleans                         |      | no      |        |    |         | yes  | no         |      | no     |      | yes   |
-| for                                             |      |         |        |    |         | yes  | yes        |      | no     |      | no    |
-| foreach                                         |      |         |        |    |         | yes  | yes        |      | yes    |      | yes   |
-| do-while                                        |      |         |        |    |         | yes  | yes        |      |        |      | yes   |
-| while                                           |      |         |        |    |         | yes  | yes        |      | yes    |      | yes   |
-| finally on loops                                |      |         |        |    |         | no   | yes        |      | yes    |      | no    |
-| finally in exception handling                   |      |         |        |    |         |      |            |      |        |      |       |
-| exceptions                                      |      | yes     |        |    |         | yes  |            |      | yes    |      | yes   |
-| case                                            |      |         | yes    |    |         | no   |            |      | no     |      | yes   |
-| break/continue                                  |      |         |        |    |         | yes  | yes        |      | yes    |      | no    |
-| switch                                          |      |         |        |    |         |      | yes        |      |        |      |       |
-| return                                          |      |         |        | no |         | yes  | yes        |      | yes    |      | yes   |
-| blocks without control structures               |      |         |        |    |         | no   | yes        |      |        |      | yes   |
-| labeled blocks                                  |      |         |        |    |         | yes  | yes        |      |        |      |       |
-| control structures result in values             |      | yes     | yes    |    | yes     | no   | yes        |      | no     |      | yes   |
-| control structures result in interesting values |      |         |        |    | yes     | no   |            |      | no     |      | no    |
-| procedures                                      |      |         |        |    |         | yes  |            |      | yes    |      | no    |
-| blocks                                          |      | yes     |        |    |         | yes  | yes        | yes  | yes    | yes  | yes   |
+| CONTROL                                         | bash | coq | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|-------------------------------------------------+------+-----+---------+--------+----+---------+------+------------+------+--------+------+-------|
+| conditional resulting in value                  |      |     | yes     | yes    |    | yes     | yes  | yes        |      | no     |      | yes   |
+| conditional branch                              |      |     | no      |        |    | no      | yes  | yes        |      | yes    |      | no    |
+| elif                                            | no   |     |         |        |    |         |      |            |      |        |      |       |
+| if uses strict booleans                         |      |     | no      |        |    |         | yes  | no         |      | no     |      | yes   |
+| for                                             |      |     |         |        |    |         | yes  | yes        |      | no     |      | no    |
+| foreach                                         |      |     |         |        |    |         | yes  | yes        |      | yes    |      | yes   |
+| do-while                                        |      |     |         |        |    |         | yes  | yes        |      |        |      | yes   |
+| while                                           |      |     |         |        |    |         | yes  | yes        |      | yes    |      | yes   |
+| finally on loops                                |      |     |         |        |    |         | no   | yes        |      | yes    |      | no    |
+| finally in exception handling                   |      |     |         |        |    |         |      |            |      |        |      |       |
+| exceptions                                      |      |     | yes     |        |    |         | yes  |            |      | yes    |      | yes   |
+| case                                            |      |     |         | yes    |    |         | no   |            |      | no     |      | yes   |
+| break/continue                                  |      |     |         |        |    |         | yes  | yes        |      | yes    |      | no    |
+| switch                                          |      |     |         |        |    |         |      | yes        |      |        |      |       |
+| return                                          |      |     |         |        | no |         | yes  | yes        |      | yes    |      | yes   |
+| blocks without control structures               |      |     |         |        |    |         | no   | yes        |      |        |      | yes   |
+| labeled blocks                                  |      |     |         |        |    |         | yes  | yes        |      |        |      |       |
+| control structures result in values             |      |     | yes     | yes    |    | yes     | no   | yes        |      | no     |      | yes   |
+| control structures result in interesting values |      |     |         |        |    | yes     | no   |            |      | no     |      | no    |
+| procedures                                      |      |     |         |        |    |         | yes  |            |      | yes    |      | no    |
+| blocks                                          |      |     | yes     |        |    |         | yes  | yes        | yes  | yes    | yes  | yes   |
 
 
-| LIBRARY                 | bash | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|-------------------------+------+---------+--------+----+---------+------+------------+------+--------+------+-------|
-| user-defined conversion |      |         |        |    |         | no   |            |      |        |      | yes   |
-| implicit functions      |      |         |        |    |         | no   |            |      |        |      | yes   |
-| implicit parameters     |      |         |        |    |         | no   |            |      |        |      | yes   |
-| first-class modules     |      |         |        |    |         |      |            |      | yes    |      |       |
-| export required         |      |         |        |    |         |      |            |      |        |      |       |
-| import required         |      |         |        |    |         |      |            |      |        |      |       |
-| catch-all import        |      |         |        |    |         |      |            |      |        |      |       |
-| hiding from catch-all   |      |         |        |    |         |      |            |      |        |      |       |
-| import hiding           |      |         |        |    |         |      |            |      |        |      |       |
+| LIBRARY                 | bash | Clojure | coq | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|-------------------------+------+---------+-----+--------+----+---------+------+------------+------+--------+------+-------|
+| user-defined conversion |      |         |     |        |    |         | no   |            |      |        |      | yes   |
+| implicit functions      |      |         |     |        |    |         | no   |            |      |        |      | yes   |
+| implicit parameters     |      |         |     |        |    |         | no   |            |      |        |      | yes   |
+| first-class modules     |      |         |     |        |    |         |      |            |      | yes    |      |       |
+| export required         |      |         |     |        |    |         |      |            |      |        |      |       |
+| import required         |      |         |     |        |    |         |      |            |      |        |      |       |
+| catch-all import        |      |         |     |        |    |         |      |            |      |        |      |       |
+| hiding from catch-all   |      |         |     |        |    |         |      |            |      |        |      |       |
+| import hiding           |      |         |     |        |    |         |      |            |      |        |      |       |
 
 
-| EVALUATION                    | bash | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|-------------------------------+------+---------+--------+----+---------+------+------------+------+--------+------+-------|
-| ?lazy functions?              |      |         |        |    |         |      |            |      |        |      |       |
-| ?lazy expressions?            |      |         |        |    |         |      |            |      |        |      |       |
-| lazy initialization of fields |      |         |        |    |         | no   |            |      |        |      | yes   |
-| delayed parameter evaluation  |      |         |        |    |         | no   |            |      |        |      | yes   |
-| eager parameter evaluation    |      |         |        |    |         | yes  |            |      | yes    |      | yes   |
-| uniform access principle      |      |         |        |    |         | no   |            |      | no     |      | yes   |
-| atoms                         |      | yes     | yes    |    |         | no   |            |      | no     |      | no    |
+| EVALUATION                    | bash | coq | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|-------------------------------+------+-----+---------+--------+----+---------+------+------------+------+--------+------+-------|
+| ?lazy functions?              |      |     |         |        |    |         |      |            |      |        |      |       |
+| ?lazy expressions?            |      |     |         |        |    |         |      |            |      |        |      |       |
+| lazy initialization of fields |      |     |         |        |    |         | no   |            |      |        |      | yes   |
+| delayed parameter evaluation  |      |     |         |        |    |         | no   |            |      |        |      | yes   |
+| eager parameter evaluation    |      |     |         |        |    |         | yes  |            |      | yes    |      | yes   |
+| uniform access principle      |      |     |         |        |    |         | no   |            |      | no     |      | yes   |
+| atoms                         |      |     | yes     | yes    |    |         | no   |            |      | no     |      | no    |
 
 
-| PROGRAM TEXT        | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|---------------------+---------+--------+----+---------+------+------------+------+--------+------+-------|
-| free-form           |         |        |    | no      | yes  | yes        | yes  | no     |      | yes   |
-| homoiconicity       | yes     | no     | no | no      | no   |            |      | no     |      | no    |
-| preprocessor        | yes     |        |    |         | no   |            |      |        |      | no    |
-| macros              | yes     |        |    |         | no   |            |      | no     |      | no    |
-| metaprogramming     |         |        |    |         |      |            |      |        |      |       |
-| regular expressions | yes     |        |    |         | no   |            |      | no     |      | no    |
-| reflection          |         |        |    |         | yes  |            |      | yes    |      |       |
+| PROGRAM TEXT        | Clojure | coq | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|---------------------+---------+-----+--------+----+---------+------+------------+------+--------+------+-------|
+| free-form           |         |     |        |    | no      | yes  | yes        | yes  | no     |      | yes   |
+| homoiconicity       | yes     |     | no     | no | no      | no   |            |      | no     |      | no    |
+| preprocessor        | yes     |     |        |    |         | no   |            |      |        |      | no    |
+| macros              | yes     |     |        |    |         | no   |            |      | no     |      | no    |
+| metaprogramming     |         |     |        |    |         |      |            |      |        |      |       |
+| regular expressions | yes     |     |        |    |         | no   |            |      | no     |      | no    |
+| reflection          |         |     |        |    |         | yes  |            |      | yes    |      |       |
 
 
-| COLLECTIONS SYNTAX | bash | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|--------------------+------+---------+--------+-----+---------+------+------------+------+--------+------+-------|
-| lists              |      | yes     | yes    | yes | yes     | no   |            |      | yes    |      | no    |
-| arrays             |      |         |        |     |         | yes  |            |      |        |      |       |
-| cons               |      |         | yes    |     |         | no   |            |      | no     |      |       |
-| indexes            |      |         |        |     |         | no   |            |      | yes    |      | no    |
-| ranges             |      |         |        | yes | yes     | no   |            |      | no     |      | no    |
-| slices             |      |         |        |     |         | no   |            |      | yes    |      | no    |
-| tuples             |      |         | yes    | yes | yes     |      |            |      | yes    |      | yes   |
-| comprehensions     |      | yes     | yes    |     | yes     | no   |            |      | yes    |      | yes   |
-| maps               |      | yes     | no     |     |         | no   |            |      | yes    |      | no    |
-| enum               |      |         |        |     |         |      |            |      |        |      |       |
+| COLLECTIONS SYNTAX | bash | Clojure | coq | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|--------------------+------+---------+-----+--------+-----+---------+------+------------+------+--------+------+-------|
+| lists              |      | yes     |     | yes    | yes | yes     | no   |            |      | yes    |      | no    |
+| arrays             |      |         |     |        |     |         | yes  |            |      |        |      |       |
+| cons               |      |         |     | yes    |     |         | no   |            |      | no     |      |       |
+| indexes            |      |         |     |        |     |         | no   |            |      | yes    |      | no    |
+| ranges             |      |         |     |        | yes | yes     | no   |            |      | no     |      | no    |
+| slices             |      |         |     |        |     |         | no   |            |      | yes    |      | no    |
+| tuples             |      |         |     | yes    | yes | yes     |      |            |      | yes    |      | yes   |
+| comprehensions     |      | yes     |     | yes    |     | yes     | no   |            |      | yes    |      | yes   |
+| maps               |      | yes     |     | no     |     |         | no   |            |      | yes    |      | no    |
+| enum               |      |         |     |        |     |         |      |            |      |        |      |       |
 
-| SPECIAL SYNTAX      | bash | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|---------------------+------+---------+--------+----+---------+------+------------+------+--------+------+-------|
-| regular expressions |      | no      | no     | no | no      | no   | no         | yes  | no     | yes  | no    |
-| system calls        |      | no      | no     | no | no      | no   | no         | yes  | no     | yes  | no    |
-
-
-| BASIC TYPES                 | bash | Clojure | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|-----------------------------+------+---------+--------+----+---------+------+------------+------+--------+------+-------|
-| integers                    |      |         |        |    | yes     | yes  | no         |      | yes    |      | yes   |
-| floating point numbers      |      |         |        |    | yes     | yes  | yes        |      | yes    |      | yes   |
-| characters                  |      | yes     |        |    | yes     | yes  | no         |      | no     |      | yes   |
-| booleans                    |      | yes     |        |    | yes     | yes  | yes        |      | yes    |      | yes   |
-| integers are arbitrary-size |      | yes     | yes    |    | yes     | no   |            |      |        |      | no    |
-| strings are sequences       |      | yes     |        |    | yes     | no   |            |      | yes    |      | yes   |
-| xml literals                |      |         |        |    |         |      |            |      |        |      | yes   |
+| SPECIAL SYNTAX      | bash | Clojure | coq | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|---------------------+------+---------+-----+--------+----+---------+------+------------+------+--------+------+-------|
+| regular expressions |      | no      |     | no     | no | no      | no   | no         | yes  | no     | yes  | no    |
+| system calls        |      | no      |     | no     | no | no      | no   | no         | yes  | no     | yes  | no    |
 
 
-| IMPLEMENTATION              | bash | Clojure | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
-|-----------------------------+------+---------+--------+-----+---------+------+------------+------+--------+------+-------|
-| concurrency                 |      |         |        |     |         |      |            |      |        |      |       |
-| true parallelism            |      | yes     | yes    | yes | yes     | yes  |            |      | no     |      | yes   |
-| full tail call optimization |      | no      | yes    |     | yes     | no   |            |      | no     |      | no    |
+| BASIC TYPES                 | bash | Clojure | coq | Erlang | F# | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|-----------------------------+------+---------+-----+--------+----+---------+------+------------+------+--------+------+-------|
+| integers                    |      |         |     |        |    | yes     | yes  | no         |      | yes    |      | yes   |
+| floating point numbers      |      |         |     |        |    | yes     | yes  | yes        |      | yes    |      | yes   |
+| characters                  |      | yes     |     |        |    | yes     | yes  | no         |      | no     |      | yes   |
+| booleans                    |      | yes     |     |        |    | yes     | yes  | yes        |      | yes    |      | yes   |
+| integers are arbitrary-size |      | yes     |     | yes    |    | yes     | no   |            |      |        |      | no    |
+| strings are sequences       |      | yes     |     |        |    | yes     | no   |            |      | yes    |      | yes   |
+| xml literals                |      |         |     |        |    |         |      |            |      |        |      | yes   |
+
+
+| VERIFICATION         | bash | Clojure | coq | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|----------------------+------+---------+-----+--------+-----+---------+------+------------+------+--------+------+-------|
+| Turing complete      | yes  | yes     | no  | yes    | yes | yes     | yes  | yes        | yes  | yes    | yes  | yes   |
+| strong normalization | no   | no      | yes | no     | no  | no      | no   | no         | no   | no     | no   | no    |
+| proof-checking       | no   | no      | yes | no     | no  | no      | no   | no         | no   | no     | no   | no    |
+
+
+| IMPLEMENTATION              | bash | Clojure | coq | Erlang | F#  | Haskell | Java | JavaScript | Perl | Python | Ruby | Scala |
+|-----------------------------+------+---------+-----+--------+-----+---------+------+------------+------+--------+------+-------|
+| concurrency                 |      |         |     |        |     |         |      |            |      |        |      |       |
+| true parallelism            |      | yes     |     | yes    | yes | yes     | yes  |            |      | no     |      | yes   |
+| full tail call optimization |      | no      |     | yes    |     | yes     | no   |            |      | no     |      | no    |
